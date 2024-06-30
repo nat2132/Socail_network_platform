@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="flex-row-ee">
+        <div class="s-image-d"><span class="s-text-d">Sign up</span></div>
+        <div class="vector"><div class="vector-1"></div></div>
+        <div class="vector-2"><div class="vector-3"></div></div>
+        <div class="vector-4"></div>
+        <div class="vector-5"></div>
+      </div>
+      <div class="inputs">
+        <form action=" " method="post">  
+            <label for="Fullname">
+                <input name="Fullname" type="text" placeholder="Fullname">
+                <i class="material-icons">person</i>
+            </label> 
+            <label for="Username">
+                <input name="Username" type="text" placeholder="Username">
+                <i class="material-icons">account_circle</i>
+            </label> 
+            <label for="Email">
+                <input name="Email" type="email" placeholder="Email"> 
+                <i class="material-icons">mail</i>
+            </label>
+            <label for="Role">
+                <select name="Role" class="Role">
+                    <option value="Student">Student</option>
+                    <option value="Instructor">Instructor</option>
+                    <option value="College Staff">College Staff</option>
+                </select>
+                <i class="material-icons">person_pin</i>
+            </label>
+            <label for="password">
+                <input name="password" type="password" placeholder="Password">
+                <i class="material-icons">lock</i>
+            </label>
+            <a href="more_info.html"><button type="submit">Create account</button></a>
+        </form>
+    </div>
+    <div class="notice"><p>By clicking "Create account", you agree to Privacy Policy.</p> <span class="aa">Already have an account? </span><a href="sign_in.html"><span class="log">Login</span></a></div>
+      </div>
+    </div>
+  </body>
+</html>

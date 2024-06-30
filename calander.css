@@ -1,0 +1,1366 @@
+body {
+    display: flex;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+aside {
+    width: 20%;
+    height: 100%;
+    padding-left: 20px;
+    border-right: 1px solid #ddd;
+    position: fixed;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  
+  }
+  .nav-icon {
+    margin-right: 10px;
+  }
+  .size {
+    font-size: 60px;
+    color: rgba(0, 0, 0, 0.703);
+  }
+  .size-text {
+    font-size: 30px;
+    margin-left: 15px;
+    color: rgba(0, 0, 0, 0.703);
+  }
+  .actives {
+    color: #2196f3;
+    font-weight: 700;
+    background-color: #ddd;
+    border-radius: 20px;
+    font-size: 30px;
+  }
+  .actives span{
+    margin-left: 15px;
+  }
+  .actives .material-icons{
+    color: #2196f3;
+  }
+.main-container {
+    width: 60%;
+    padding: 20px;
+    margin-left: 500px;
+}
+
+.right {
+    width: 20%;
+    padding-right: 20px;
+    position: relative;
+}
+
+.navbar {
+    margin-top: 10px;
+}
+
+.s-image-d {
+    width: 200px;
+    height: 50px;
+    background: url(./assets/images/f6af606c-dda5-4103-818e-9bc4d572d01c.png) no-repeat center;
+    background-size: cover;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.notif {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    left: 150px;
+}
+
+.notif-icon {
+    font-size: 60px;
+    color: #2196f3;
+}
+
+.notif-num {
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.781);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    right: 30px;
+    top: 3px;
+    font-weight: 500;
+    font-size: 19px;
+    color: whitesmoke;
+    line-height: 30px;
+}
+
+.pro {
+    width: 180px;
+    margin: 20px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.pro-img img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.pro-name {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.pro-status {
+    font-size: 15px;
+    color: green;
+    font-weight: 500;
+}
+
+.pro-role {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(178, 178, 178);
+}
+
+.size {
+    font-size: 60px;
+    color: rgba(0, 0, 0, 0.703);
+}
+
+.size-text {
+    font-size: 30px;
+    margin-left: 15px;
+    color: rgba(0, 0, 0, 0.703);
+}
+
+.space {
+    margin-top: 20px;
+}
+
+.recent {
+    font-size: 50px;
+    color: #2196f3;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.recent-img {
+    width: 120px;
+    border-radius: 50%;
+}
+
+.recent-names {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 10px;
+    display: block;
+}
+
+.like-comment span {
+    margin-right: 10px;
+}
+
+.like-comment i {
+    margin-right: 5px;
+}
+
+.card-header img {
+    margin-right: 10px;
+}
+
+.comment-section {
+    display: flex;
+    align-items: center;
+}
+
+.comment-section input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.comment-header img {
+    margin-right: 10px;
+}
+
+.comment {
+    margin: 10px;
+}
+
+.comment .user {
+    font-weight: bold;
+}
+
+.comment .text {
+    margin-left: 5px;
+}
+
+.suggested-people {
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    width: 400px;
+    height: 600px;
+    padding: 10px;
+    top: 10%;
+    position: relative;
+}
+
+.suggested-people h3 {
+    margin: 20px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #2196f3;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.person:last-child {
+    margin-bottom: 0;
+}
+
+.person img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.person-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.person-info span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #14171a;
+}
+
+.person-info a {
+    font-size: 20px;
+    color: #657786;
+    text-decoration: none;
+}
+
+.person-info a:hover {
+    text-decoration: underline;
+}
+
+.head{
+    color: #2196f3; 
+    font-weight: 600; 
+    margin-bottom: 50px; 
+    text-align: center; 
+    font-size: 50px;
+}
+
+:root {
+    --dark-body: #4d4c5a;
+    --dark-main: #141529;
+    --dark-second: #79788c;
+    --dark-hover: #323048;
+    --dark-text: #f8fbff;
+
+    --light-body: #f3f8fe;
+    --light-main: #fdfdfd;
+    --light-second: #c3c2c8;
+    --light-hover: #edf0f5;
+    --light-text: #151426;
+
+    --blue: #0000ff;
+    --white: #fff;
+
+    --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    --font-family: cursive;
+}
+
+
+.light {
+    --bg-body: var(--light-body);
+    --bg-main: var(--light-main);
+    --bg-second: var(--light-second);
+    --color-hover: var(--light-hover);
+    --color-txt: var(--light-text);
+}
+
+.calendar {
+    height: max-content;
+    width: max-content;
+    background-color: var(--bg-main);
+    border-radius: 30px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    background-color: var(--bg-body);
+}
+
+.light .calendar {
+    box-shadow: var(--shadow);
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--color-txt);
+    padding: 10px;
+}
+
+.calendar-body {
+    padding: 10px;
+}
+
+.calendar-week-day {
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: 600;
+}
+
+.calendar-week-day div {
+    display: grid;
+    place-items: center;
+    color: var(--bg-second);
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+    color: var(--color-txt);
+}
+
+.calendar-days div {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    position: relative;
+    cursor: pointer;
+    animation: to-top 1s forwards;
+    /* border-radius: 50%; */
+}
+
+.calendar-days div span {
+    position: absolute;
+}
+
+.calendar-days div:hover span {
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+
+.calendar-days div span:nth-child(1),
+.calendar-days div span:nth-child(3) {
+    width: 2px;
+    height: 0;
+    background-color: var(--color-txt);
+}
+
+.calendar-days div:hover span:nth-child(1),
+.calendar-days div:hover span:nth-child(3) {
+    height: 100%;
+}
+
+.calendar-days div span:nth-child(1) {
+    bottom: 0;
+    left: 0;
+}
+
+.calendar-days div span:nth-child(3) {
+    top: 0;
+    right: 0;
+}
+
+.calendar-days div span:nth-child(2),
+.calendar-days div span:nth-child(4) {
+    width: 0;
+    height: 2px;
+    background-color: var(--color-txt);
+}
+
+.calendar-days div:hover span:nth-child(2),
+.calendar-days div:hover span:nth-child(4) {
+    width: 100%;
+}
+
+.calendar-days div span:nth-child(2) {
+    top: 0;
+    left: 0;
+}
+
+.calendar-days div span:nth-child(4) {
+    bottom: 0;
+    right: 0;
+}
+
+.calendar-days div:hover span:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.calendar-days div:hover span:nth-child(3) {
+    transition-delay: 0.4s;
+}
+
+.calendar-days div:hover span:nth-child(4) {
+    transition-delay: 0.6s;
+}
+
+.calendar-days div.curr-date,
+.calendar-days div.curr-date:hover {
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 50%;
+}
+
+.calendar-days div.curr-date span {
+    display: none;
+}
+
+.month-picker {
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.month-picker:hover {
+    background-color: var(--color-hover);
+}
+
+.year-picker {
+    display: flex;
+    align-items: center;
+}
+
+.year-change {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.year-change:hover {
+    background-color: var(--color-hover);
+}
+
+.calendar-footer {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.toggle {
+    display: flex;
+}
+
+.toggle span {
+    margin-right: 10px;
+    color: var(--color-txt);
+}
+
+.dark-mode-switch {
+    position: relative;
+    width: 48px;
+    height: 25px;
+    border-radius: 14px;
+    background-color: var(--bg-second);
+    cursor: pointer;
+}
+
+.dark-mode-switch-ident {
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: var(--bg-main);
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: left 0.2s ease-in-out;
+}
+
+.dark .dark-mode-switch .dark-mode-switch-ident {
+    top: 2px;
+    left: calc(2px + 50%);
+}
+
+.month-list {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--bg-main);
+    padding: 20px;
+    grid-template-columns: repeat(3, auto);
+    gap: 5px;
+    display: grid;
+    transform: scale(1.5);
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.month-list.show {
+    transform: scale(1);
+    visibility: visible;
+    pointer-events: visible;
+    transition: all 0.2s ease-in-out;
+}
+
+.month-list > div {
+    display: grid;
+    place-items: center;
+}
+
+.month-list > div > div {
+    width: 100%;
+    padding: 5px 20px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    color: var(--color-txt);
+}
+
+.month-list > div > div:hover {
+    background-color: var(--color-hover);
+}
+
+@keyframes to-top {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.fc-toolbar-title {
+    font-size: 1.5rem;
+  }
+  
+  .fc-col-header-cell-cushion, .fc-daygrid-day-number {
+    font-size: 1.2rem;
+  }
+  
+  .fc-event-title {
+    font-size: 1rem;
+  }
+  
+  /* Adjust the calendar's height */
+  .fc-view-harness {
+    height: 80vh; /* Adjust the height as needed */
+  }
+  .custom-calendar {
+  background-color: #f5f5f5; /* Change the background color */
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  padding: 20px; /* Add some padding around the calendar */
+  }
+  .calendar{
+      top: 10%;
+  }
+  .fc-event-title {
+      font-weight: bold;
+  }
+
+  .fc-event-time {
+      color: #666; /* Adjust the event time color */
+  }
+.legend {
+      list-style-type: none;
+      padding: 0;
+      margin: 150px;
+      left: -10%;
+  }
+  .legend-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+  }
+  .legend-icon {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin-right: 10px;
+  }
+  .legend-text {
+      font-size: 18px;
+  }
+  .legend-icon.lunches {
+      background-color: #8a2be2; /* purple */
+  }
+  .legend-icon.meetings {
+      background-color: #ba55d3; /* medium orchid */
+  }
+  .legend-icon.events {
+      background-color: #1e90ff; /* dodger blue */
+  }
+  .legend-icon.reminders {
+      background-color: #32cd32; /* lime green */
+  }
+  .legend-icon.tasks {
+      background-color: #ff8c00; /* dark orange */
+  }
+  .add {
+      color: #1e90ff;
+      font-size: 65px;
+      position: relative;
+      left: 105%;
+  }
+  .add:hover {
+      color: #0e6dcd;
+      font-size: 70px;
+      cursor: pointer;
+  }
+  .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      background: white;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      border-radius: 8px;
+      z-index: 1000;
+      padding: 20px;
+  }
+  .popup-header {
+      font-size: 20px;
+      margin-bottom: 10px;
+  }
+  .popup-form {
+      display: flex;
+      flex-direction: column;
+  }
+  .popup-form input, .popup-form textarea {
+      margin-bottom: 10px;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+  }
+  .popup-form button {
+      padding: 10px;
+      font-size: 16px;
+      background-color: #1e90ff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  }
+  .popup-form button:hover {
+      background-color: #0e6dcd;
+  }
+  .popup-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 20px;
+      cursor: pointer;
+  }
+  .overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+  }
+
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 480px) {
+    body{
+      overflow-y: show;
+    }
+      aside {
+        width: 50%;
+        height: 100%;
+        padding-left: 20px;
+        background-color: #fff;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 1;
+      }
+    
+      aside.sidebar.active {
+        transform: translateX(0);
+      }
+      .main{
+        width: 300px;
+      }
+      .menu{
+        color: #2196f3;
+        font-size: 30px;
+        font-weight: 500;
+        cursor: pointer;
+        position: fixed;
+        top: 2%;
+        left: 3%;
+        display: block;
+        position: fixed;
+        z-index: 1;
+      }
+      .menu:hover{
+        color: #007bff;
+      }
+      .main-container {
+        width: 60%;
+        padding: 20px;
+        margin-left: 10px;
+      }
+      .right {
+        width: 0%;
+        padding: 0;
+      }
+      .navbar {
+        margin-top: 5px;
+      }
+      .s-image-d {
+        width: 100px;
+        height: 50px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+      }
+      .notif {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        top: 1%;
+        right: 25%;
+      }
+      .notif-icon {
+        font-size: 30px;
+      }
+      .notif-num {
+        width: 15px;
+        height: 15px;
+        right: 20px;
+        top: 2px;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 15px;
+      }
+      .pro {
+        width: 100px;
+        margin: 20px;
+        top: 0;
+        right: 0;
+      }
+      .pro-img img {
+        width: 40px;
+        border-radius: 50%;
+      }
+      .pro-name {
+        font-size: 10px;
+        font-weight: 500;
+      }
+      .pro-status {
+        font-size: 8px;
+        font-weight: 500;
+      }
+      .pro-role {
+        font-size: 8px;
+        font-weight: 500;
+      }
+      .size {
+        font-size: 20px;
+      }
+      .size-text {
+        font-size: 13px;
+        margin-left: 10px;
+      }
+      .space {
+        margin-top: 10px;
+      }
+      .actives {
+        font-weight: 700;
+        border-radius: 20px;
+      }
+      .recent {
+        font-size: 15px;
+        font-weight: 600;
+        margin: 40px;
+      }
+      .recent-img {
+        width: 40px;
+        border-radius: 50%;
+      }
+      .recent-names {
+        font-weight: 600;
+        font-size: 8px;
+        margin-top: 10px;
+      }
+      .info .name{
+        font-size: 10px;
+        font-weight: 600;
+      }
+      .info h5{
+        font-size: 10px;
+      }
+      .rounded-circle{
+        width: 40px;
+      }
+      .like-comment span {
+        margin-right: 10px;
+      }
+      .like-comment i {
+        margin-right: 5px;
+      }
+      .card-header img {
+        margin-right: 10px;
+      }
+      .comment-section {
+        width: 250px;
+        height: 20px;
+        margin-left: 15px;
+      }
+      .comment-section input {
+        flex: 1;
+        margin-right: 7px;
+        margin-bottom: 8px;
+      }
+      .card-header img {
+        margin-right: 10px;
+      }
+      .comment {
+        font-size: 8px;
+      }
+      .comment .user {
+        font-weight: bold;
+      }
+      .comment .text {
+        margin-left: 0px;
+      }
+      .suggested-people {
+        border: 1px solid #e1e8ed;
+        border-radius: 8px;
+        width: 400px;
+        height: 600px;
+        padding: 10px;
+        top: 10%;
+        position: relative;
+        display: none;
+      }
+      .suggested-people h3 {
+        margin: 20px;
+        font-size: 25px;
+        font-weight: 600;
+        color:#2196f3;
+      }
+      .like-comment span{
+        font-size: 8px;
+      }
+      .like-comment span .text{
+        display: none;
+      }
+      .like-comment span i{
+        font-size: 10px;
+      }
+      h4{
+        font-size: 10px;
+      }
+      h5{
+        font-size: 10px;
+      }
+      .person {
+        margin: 20px;
+      }
+      .person:last-child {
+        margin-bottom: 0;
+      }
+      .person img {
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        margin-right: 10px;
+      }
+      .person-info span {
+        font-size: 20px;
+        font-weight: 600;
+      }
+      .person-info a {
+        font-size: 20px;
+      }
+    .search-results {
+        flex-grow: 1;
+        padding: 20px;
+        border-radius: 20px;
+        height: 300px;
+        top: 50%;
+        left: 20%;
+        z-index: 2;
+      }
+      .search-bar {
+        margin-bottom: 20px;
+      }
+      .search-bar input {
+        flex-grow: 1;
+        padding: 10px;
+        font-size: 10px;
+        border-radius: 5px;
+      }
+      .search-bar i {
+        margin-left: 10px;
+        cursor: pointer;
+      }
+      .result-item div span{
+        font-size: 10px;
+      }
+      .result-item {
+        margin-bottom: 10px;
+      }
+      .result-item img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 20px;
+      }
+      .nav-link {
+        margin-bottom: 10px;
+      }
+      .nav-icon {
+        margin-right: 10px;
+      }
+    .comments .show{
+      font-size: 8px;
+    }
+    .like-comment span i{
+      font-size: 20px;
+    }
+      .arrow-icon {
+        font-size: 10px;
+        display: none;
+      }
+      
+      .recent-container {
+        width: 100vw;
+        margin-right: calc(-50vw + 50%);
+      }
+      
+      .col-2 {
+        margin: 10px;
+      }
+      .card {
+            border-radius: 15px;
+        }
+        .card-img-top {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .comment img{
+          width: 30px;
+        }
+        .info h4 {
+            font-size: 19px;
+            margin-bottom: 5px;
+        }
+        .info p {
+            font-size: 0.875rem;
+            margin-bottom: 2px;
+        }
+        .info small {
+            font-size: 0.75rem;
+        }
+        .like-comment span {
+            margin-right: 15px;
+        }
+        .like-comment i {
+            margin-right: 5px;
+        }
+        .comment-section {
+            margin-top: 20px;
+        }
+        .comment-section input {
+            height: 20px;
+            font-size: 8px;
+            border-radius: 15px 0 0 15px;
+        }
+        .comment-section button {
+            border-radius: 0 15px 15px 0;
+            font-size: 8px;
+        }
+        .comments {
+            margin-top: 20px;
+        }
+        .comment {
+            margin-bottom: 10px;
+        }
+        .comment img {
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .comment .user {
+            margin-right: 5px;
+        }
+      
+      .add{
+        font-size: 40px;
+        top: 70%;
+        left: 85%;
+        z-index: 1;
+      }
+      .add:hover{
+        font-size: 35px;
+      }
+      
+      .add-options {
+        top: 52%;
+        left: 58%;
+        font-size: 10px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000; 
+      }
+      
+      .add-options .option {
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+      
+    }
+    
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 480px) and (max-width: 1023px) {
+      aside {
+        width: 22%;
+        height: 100%;
+        padding-left: 20px;
+      }
+      .main-container {
+        width: 60%;
+        padding: 20px;
+        margin-left: 200px;
+      }
+      .recent-container {
+        width: 100vw;
+        margin-right: calc(-50vw + 50%);
+      }
+      .right {
+        width: 0%;
+        padding: 0;
+      }
+      .navbar {
+        margin-top: 10px;
+      }
+      .s-image-d {
+        width: 100px;
+        height: 50px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+      }
+      .notif {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        top: 0;
+        right: 15%;
+      }
+      .notif-icon {
+        font-size: 30px;
+      }
+      .notif-num {
+        width: 15px;
+        height: 15px;
+        right: 20px;
+        top: 2px;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 15px;
+      }
+      .pro {
+        width: 100px;
+        margin: 20px;
+        top: 0;
+        right: 0;
+      }
+      .pro-img img {
+        width: 50px;
+        border-radius: 50%;
+      }
+      .pro-name {
+        font-size: 12px;
+        font-weight: 500;
+      }
+      .pro-status {
+        font-size: 10px;
+        font-weight: 500;
+      }
+      .pro-role {
+        font-size: 10px;
+        font-weight: 500;
+      }
+      .size {
+        font-size: 50px;
+      }
+      .size-text {
+        font-size: 30px;
+        margin-left: 10px;
+        display: none;
+      }
+      .space {
+        margin-top: 20px;
+      }
+      .actives {
+        font-weight: 700;
+        border-radius: 20px;
+      }
+      .recent {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 40px;
+      }
+      .recent-img {
+        width: 60px;
+        border-radius: 50%;
+      }
+      .recent-names {
+        font-weight: 600;
+        font-size: 10px;
+        margin-top: 10px;
+      }
+      .info .name{
+        font-size: 16px;
+        font-weight: 600;
+      }
+      .info h5{
+        font-size: 14px;
+      }
+      .like-comment span {
+        margin-right: 10px;
+      }
+      .like-comment i {
+        margin-right: 5px;
+      }
+      .card-header img {
+        margin-right: 10px;
+      }
+      .comment-section {
+        width: 300px;
+        margin-left: 30px;
+      }
+      .comment-section input {
+        flex: 1;
+        margin-right: 10px;
+      }
+      .card-header img {
+        margin-right: 10px;
+      }
+      .comment {
+        margin-left: 30px;
+        font-size: 13px;
+      }
+      .comment .user {
+        font-weight: bold;
+      }
+      .comment .text {
+        margin-left: 5px;
+      }
+      .suggested-people {
+        border: 1px solid #e1e8ed;
+        border-radius: 8px;
+        width: 400px;
+        height: 600px;
+        padding: 10px;
+        top: 10%;
+        position: relative;
+        display: none;
+      }
+      .suggested-people h3 {
+        margin: 20px;
+        font-size: 25px;
+        font-weight: 600;
+        color:#2196f3;
+      }
+      .like-comment span{
+        font-size: 13px;
+        margin-left: 10px;
+      }
+      .like-comment {
+        font-size: 13px;
+        margin-left: 30px;
+      }
+      .like-comment span .text{
+        display: none;
+      }
+      .like-comment span i{
+        font-size: 30px;
+      }
+      h4{
+        font-size: 17px;
+      }
+      h5{
+        font-size: 17px;
+      }
+    
+      .person {
+        margin: 20px;
+      }
+      .person:last-child {
+        margin-bottom: 0;
+      }
+      .person img {
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        margin-right: 10px;
+      }
+      .person-info span {
+        font-size: 20px;
+        font-weight: 600;
+      }
+      .person-info a {
+        font-size: 20px;
+      }
+    .search-results {
+        flex-grow: 1;
+        padding: 20px;
+        border-radius: 20px;
+        height: 420px;
+        top: 45%;
+        left: 10%;
+        z-index: 1;
+      }
+      .search-bar {
+        margin-bottom: 20px;
+      }
+      .search-bar input {
+        flex-grow: 1;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+      }
+      .search-bar i {
+        margin-left: 10px;
+        cursor: pointer;
+      }
+      .result-item {
+        margin-bottom: 20px;
+      }
+      .result-item img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 20px;
+      }
+      .nav-link {
+        margin-bottom: 10px;
+      
+      }
+      .nav-icon {
+        margin-right: 10px;
+      }
+    
+      .arrow-icon {
+        font-size: 20px;
+        margin-top: 30px;
+        display: none;
+      }
+      
+      .recent-container {
+        width: 90%;
+      }
+      
+      .col-2 {
+        margin-right: 15px;
+      }
+      .card {
+            border-radius: 15px;
+        }
+        .card-img-top {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .info h4 {
+            font-size: 19px;
+            margin-bottom: 5px;
+        }
+        .info p {
+            font-size: 0.875rem;
+            margin-bottom: 2px;
+        }
+        .info small {
+            font-size: 0.75rem;
+        }
+        .like-comment span {
+            margin-right: 15px;
+        }
+        .like-comment i {
+            margin-right: 5px;
+        }
+        .comment-section {
+            margin-top: 20px;
+        }
+        .comment-section input {
+            height: 40px;
+            font-size: 14px;
+            border-radius: 15px 0 0 15px;
+        }
+        .comment-section button {
+            border-radius: 0 15px 15px 0;
+            font-size: 14px;
+        }
+        .comments {
+            margin-top: 20px;
+        }
+        .comment {
+            margin-bottom: 10px;
+        }
+        .comment img {
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .comment .user {
+            margin-right: 5px;
+        }
+      
+      .add{
+        font-size: 50px;
+        top: 50%;
+        left: 70%;
+      }
+      .add:hover{
+        font-size: 55px;
+      }
+      
+      .add-options {
+        top: 52%;
+        left: 58%;
+        font-size: 10px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000; 
+      }
+      
+      .add-options .option {
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+    }
