@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Social Network Platform — UI Prototype</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><circle cx='8' cy='8' r='7' fill='%236c5ce7'/></svg>" />
+    <style>
+      :root {
+        --bg: #0b1120;
+        --card: #111a2e;
+        --line: rgba(255, 255, 255, 0.08);
+        --txt: #eef2ff;
+        --muted: #94a3b8;
+        --brand: #6c5ce7;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        background: radial-gradient(1200px 700px at 80% -10%, #1e1b4b 0%, var(--bg) 50%);
+        color: var(--txt);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+      }
+      main { max-width: 760px; width: 100%; }
+      h1 { font-size: 1.8rem; margin: 0 0 6px; }
+      .badge {
+        display: inline-block;
+        font-size: 0.75rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #c7bfff;
+        border: 1px solid rgba(199, 191, 255, 0.35);
+        border-radius: 999px;
+        padding: 4px 12px;
+        margin-bottom: 18px;
+      }
+      p.sub { color: var(--muted); margin: 0 0 26px; line-height: 1.55; }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+        gap: 12px;
+      }
+      a.tile {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 16px;
+        text-decoration: none;
+        color: var(--txt);
+        transition: border-color 0.2s, transform 0.2s;
+      }
+      a.tile:hover { border-color: var(--brand); transform: translateY(-2px); }
+      a.tile strong { font-size: 0.95rem; }
+      a.tile span { color: var(--muted); font-size: 0.8rem; }
+      footer { margin-top: 28px; color: var(--muted); font-size: 0.8rem; }
+      footer a { color: #a5b4fc; text-decoration: none; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <span class="badge">Front-end prototype</span>
+      <h1>Social Network Platform — UI Prototype</h1>
+      <p class="sub">
+        This is a static front-end design prototype (HTML/CSS). Pages are
+        navigable demos only — sign-in, posts and messaging are not backed by a
+        real server yet.
+      </p>
+      <div class="grid">
+        <a class="tile" href="home.html"><strong>Home feed</strong><span>Landing / feed layout</span></a>
+        <a class="tile" href="sign_in.html"><strong>Sign in</strong><span>Auth screen design</span></a>
+        <a class="tile" href="signup.html"><strong>Sign up</strong><span>Registration screen</span></a>
+        <a class="tile" href="forgot_password.html"><strong>Forgot password</strong><span>Recovery flow design</span></a>
+        <a class="tile" href="your_profile.html"><strong>Your profile</strong><span>Profile page design</span></a>
+        <a class="tile" href="others_profile.html"><strong>Friend profile</strong><span>Other users' profiles</span></a>
+        <a class="tile" href="message.html"><strong>Messages</strong><span>Chat interface design</span></a>
+        <a class="tile" href="saved.html"><strong>Saved</strong><span>Saved posts screen</span></a>
+        <a class="tile" href="video.html"><strong>Videos</strong><span>Video feed design</span></a>
+        <a class="tile" href="video_player.html"><strong>Video player</strong><span>Player screen design</span></a>
+        <a class="tile" href="more_info.html"><strong>More info</strong><span>Onboarding details</span></a>
+        <a class="tile" href="home.html"><strong>Event calendar</strong><span>Calendar — see home feed</span></a>
+      </div>
+      <footer>
+        Built by
+        <a href="https://github.com/nat2132">nat2132</a> — see the repository on GitHub.
+      </footer>
+    </main>
+  </body>
+</html>
