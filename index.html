@@ -1,96 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Social Network Platform — UI Prototype</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><circle cx='8' cy='8' r='7' fill='%236c5ce7'/></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Network Platform — Connect &amp; Share</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: '#f5f3ff',
+                500: '#8b5cf6',
+                600: '#7c3aed',
+                700: '#6d28d9',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <style>
-      :root {
-        --bg: #0b1120;
-        --card: #111a2e;
-        --line: rgba(255, 255, 255, 0.08);
-        --txt: #eef2ff;
-        --muted: #94a3b8;
-        --brand: #6c5ce7;
-      }
-      * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        min-height: 100vh;
-        font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-        background: radial-gradient(1200px 700px at 80% -10%, #1e1b4b 0%, var(--bg) 50%);
-        color: var(--txt);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 24px;
-      }
-      main { max-width: 760px; width: 100%; }
-      h1 { font-size: 1.8rem; margin: 0 0 6px; }
-      .badge {
-        display: inline-block;
-        font-size: 0.75rem;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        color: #c7bfff;
-        border: 1px solid rgba(199, 191, 255, 0.35);
-        border-radius: 999px;
-        padding: 4px 12px;
-        margin-bottom: 18px;
-      }
-      p.sub { color: var(--muted); margin: 0 0 26px; line-height: 1.55; }
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
-        gap: 12px;
-      }
-      a.tile {
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-        background: var(--card);
-        border: 1px solid var(--line);
-        border-radius: 14px;
-        padding: 16px;
-        text-decoration: none;
-        color: var(--txt);
-        transition: border-color 0.2s, transform 0.2s;
-      }
-      a.tile:hover { border-color: var(--brand); transform: translateY(-2px); }
-      a.tile strong { font-size: 0.95rem; }
-      a.tile span { color: var(--muted); font-size: 0.8rem; }
-      footer { margin-top: 28px; color: var(--muted); font-size: 0.8rem; }
-      footer a { color: #a5b4fc; text-decoration: none; }
+      body { font-family: 'Plus Jakarta Sans', sans-serif; }
     </style>
   </head>
-  <body>
-    <main>
-      <span class="badge">Front-end prototype</span>
-      <h1>Social Network Platform — UI Prototype</h1>
-      <p class="sub">
-        This is a static front-end design prototype (HTML/CSS). Pages are
-        navigable demos only — sign-in, posts and messaging are not backed by a
-        real server yet.
-      </p>
-      <div class="grid">
-        <a class="tile" href="home.html"><strong>Home feed</strong><span>Landing / feed layout</span></a>
-        <a class="tile" href="sign_in.html"><strong>Sign in</strong><span>Auth screen design</span></a>
-        <a class="tile" href="signup.html"><strong>Sign up</strong><span>Registration screen</span></a>
-        <a class="tile" href="forgot_password.html"><strong>Forgot password</strong><span>Recovery flow design</span></a>
-        <a class="tile" href="your_profile.html"><strong>Your profile</strong><span>Profile page design</span></a>
-        <a class="tile" href="others_profile.html"><strong>Friend profile</strong><span>Other users' profiles</span></a>
-        <a class="tile" href="message.html"><strong>Messages</strong><span>Chat interface design</span></a>
-        <a class="tile" href="saved.html"><strong>Saved</strong><span>Saved posts screen</span></a>
-        <a class="tile" href="video.html"><strong>Videos</strong><span>Video feed design</span></a>
-        <a class="tile" href="video_player.html"><strong>Video player</strong><span>Player screen design</span></a>
-        <a class="tile" href="more_info.html"><strong>More info</strong><span>Onboarding details</span></a>
-        <a class="tile" href="home.html"><strong>Event calendar</strong><span>Calendar — see home feed</span></a>
+  <body class="bg-slate-950 text-slate-100 min-h-screen selection:bg-purple-500 selection:text-white">
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800 px-6 py-3">
+      <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <div class="h-10 w-10 rounded-xl bg-gradient-to-tr from-purple-600 to-indigo-500 flex items-center justify-center font-extrabold text-xl text-white shadow-lg shadow-purple-500/30">
+            S
+          </div>
+          <div>
+            <h1 class="text-lg font-bold tracking-tight text-white flex items-center gap-2">
+              Social Pulse <span class="text-[10px] px-2 py-0.5 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30">Live Platform</span>
+            </h1>
+            <p class="text-xs text-slate-400">Connect, share stories &amp; chat in real time</p>
+          </div>
+        </div>
+
+        <!-- Global Search Bar -->
+        <div class="hidden md:flex items-center gap-2 bg-slate-900 border border-slate-800 rounded-xl px-4 py-2 w-80 text-sm focus-within:border-purple-500 transition-colors">
+          <span class="text-slate-400">🔍</span>
+          <input type="text" aria-label="Search" placeholder="Search creators, hashtags, posts..." class="bg-transparent border-none text-white focus:outline-none w-full text-xs" />
+        </div>
+
+        <!-- User Quick Controls -->
+        <div class="flex items-center gap-3">
+          <a href="home.html" class="px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold transition-all">Classic Grid View</a>
+          <a href="your_profile.html" class="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-purple-600/20 border border-purple-500/30 text-purple-200 text-xs font-bold hover:bg-purple-600 hover:text-white transition-all">
+            <div class="h-6 w-6 rounded-full bg-purple-500 flex items-center justify-center text-[10px]">NA</div>
+            <span>My Profile</span>
+          </a>
+        </div>
       </div>
-      <footer>
-        Built by
-        <a href="https://github.com/nat2132">nat2132</a> — see the repository on GitHub.
-      </footer>
-    </main>
+    </header>
+
+    <!-- Main Layout -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-6 grid grid-cols-1 lg:grid-cols-12 gap-6">
+      <!-- Left Sidebar -->
+      <aside class="hidden lg:block lg:col-span-3 space-y-4">
+        <div class="bg-slate-900 border border-slate-800/80 rounded-2xl p-4 space-y-1">
+          <a href="#" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl bg-purple-600 text-white font-semibold text-xs transition-all shadow-md shadow-purple-600/20">
+            <span>🔥</span> Feed
+          </a>
+          <a href="video.html" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-slate-300 hover:bg-slate-800 hover:text-white font-medium text-xs transition-all">
+            <span>🎬</span> Reels &amp; Videos
+          </a>
+          <a href="message.html" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl text-slate-300 hover:bg-slate-800 hover:text-white font-medium text-xs transition-all">
+            <span class="flex items-center gap-3"><span>💬</span> Messages</span>
+            <span class="px-2 py-0.5 rounded-full bg-purple-500 text-white text-[10px] font-bold">4</span>
+          </a>
+          <a href="calander.html" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-slate-300 hover:bg-slate-800 hover:text-white font-medium text-xs transition-all">
+            <span>📅</span> Events &amp; Calendar
+          </a>
+          <a href="saved.html" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-slate-300 hover:bg-slate-800 hover:text-white font-medium text-xs transition-all">
+            <span>🔖</span> Saved Items
+          </a>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800/80 rounded-2xl p-4">
+          <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Trending Topics</h4>
+          <div class="space-y-2.5 text-xs">
+            <div>
+              <span class="text-purple-400 font-bold block">#AddisTechSummit</span>
+              <span class="text-[10px] text-slate-500">12.4k posts</span>
+            </div>
+            <div>
+              <span class="text-purple-400 font-bold block">#EthioArtExpo</span>
+              <span class="text-[10px] text-slate-500">8.9k posts</span>
+            </div>
+            <div>
+              <span class="text-purple-400 font-bold block">#FullStackDev</span>
+              <span class="text-[10px] text-slate-500">24.1k posts</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Center Feed -->
+      <main class="lg:col-span-6 space-y-6">
+        <!-- Story Reels -->
+        <div class="flex items-center gap-3 overflow-x-auto pb-2 scrollbar-none">
+          <div class="flex-shrink-0 w-20 flex flex-col items-center gap-1 cursor-pointer">
+            <div class="h-16 w-16 rounded-2xl bg-gradient-to-tr from-purple-600 to-pink-500 p-0.5 shadow-lg">
+              <div class="h-full w-full rounded-[14px] bg-slate-900 flex items-center justify-center text-purple-400 text-xl font-bold border border-slate-800">+</div>
+            </div>
+            <span class="text-[10px] text-slate-300 font-medium">Add Story</span>
+          </div>
+
+          <div class="flex-shrink-0 w-20 flex flex-col items-center gap-1 cursor-pointer group">
+            <div class="h-16 w-16 rounded-2xl bg-gradient-to-tr from-purple-500 to-pink-500 p-0.5 shadow-lg group-hover:scale-105 transition-transform">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Story" class="h-full w-full rounded-[14px] object-cover" />
+            </div>
+            <span class="text-[10px] text-slate-300 font-medium truncate w-16 text-center">Abebe K.</span>
+          </div>
+
+          <div class="flex-shrink-0 w-20 flex flex-col items-center gap-1 cursor-pointer group">
+            <div class="h-16 w-16 rounded-2xl bg-gradient-to-tr from-purple-500 to-pink-500 p-0.5 shadow-lg group-hover:scale-105 transition-transform">
+              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&q=80" alt="Story" class="h-full w-full rounded-[14px] object-cover" />
+            </div>
+            <span class="text-[10px] text-slate-300 font-medium truncate w-16 text-center">Sara M.</span>
+          </div>
+
+          <div class="flex-shrink-0 w-20 flex flex-col items-center gap-1 cursor-pointer group">
+            <div class="h-16 w-16 rounded-2xl bg-gradient-to-tr from-purple-500 to-pink-500 p-0.5 shadow-lg group-hover:scale-105 transition-transform">
+              <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=150&q=80" alt="Story" class="h-full w-full rounded-[14px] object-cover" />
+            </div>
+            <span class="text-[10px] text-slate-300 font-medium truncate w-16 text-center">Dawit T.</span>
+          </div>
+        </div>
+
+        <!-- Create Post Box -->
+        <div class="bg-slate-900 border border-slate-800/80 rounded-2xl p-4 shadow-sm">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="h-10 w-10 rounded-full bg-purple-600 flex items-center justify-center text-white font-bold text-sm">NA</div>
+            <input type="text" id="postInput" placeholder="What's happening in your tech & creative world?" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-purple-500" />
+          </div>
+          <div class="flex items-center justify-between pt-2 border-t border-slate-800 text-xs">
+            <div class="flex items-center gap-4 text-slate-400">
+              <button class="hover:text-purple-400 flex items-center gap-1">📷 Photo/Video</button>
+              <button class="hover:text-purple-400 flex items-center gap-1">📍 Location</button>
+              <button class="hover:text-purple-400 flex items-center gap-1">😊 Mood</button>
+            </div>
+            <button onclick="alert('Post published to feed!')" class="px-4 py-2 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs transition-all shadow-md shadow-purple-600/20">
+              Post
+            </button>
+          </div>
+        </div>
+
+        <!-- Feed Posts -->
+        <div class="space-y-6">
+          <article class="bg-slate-900 border border-slate-800/80 rounded-2xl overflow-hidden shadow-sm">
+            <div class="p-4 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Avatar" class="h-10 w-10 rounded-full object-cover border border-purple-500/30" />
+                <div>
+                  <h4 class="text-xs font-bold text-white">Helina Girma <span class="text-[10px] text-slate-400 font-normal">· 2h ago</span></h4>
+                  <p class="text-[10px] text-purple-400">UI/UX &amp; Frontend Architect</p>
+                </div>
+              </div>
+              <button class="text-slate-400 hover:text-white">•••</button>
+            </div>
+
+            <p class="px-4 text-xs text-slate-200 leading-relaxed mb-3">
+              Just wrapped up designing the new dark-mode design system for East African tech startups! Clean typography, responsive grid structures, and micro-animations make all the difference. 🎨✨
+            </p>
+
+            <div class="h-72 w-full bg-slate-950 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80" alt="Design post preview" class="h-full w-full object-cover" />
+            </div>
+
+            <div class="p-4 flex items-center justify-between border-t border-slate-800 text-xs text-slate-400">
+              <button onclick="this.classList.toggle('text-pink-500')" class="flex items-center gap-1.5 hover:text-pink-400">❤️ <span>248 Likes</span></button>
+              <button class="flex items-center gap-1.5 hover:text-purple-400">💬 <span>34 Comments</span></button>
+              <button class="flex items-center gap-1.5 hover:text-purple-400">🔄 <span>12 Shares</span></button>
+            </div>
+          </article>
+        </div>
+      </main>
+
+      <!-- Right Sidebar -->
+      <aside class="hidden lg:block lg:col-span-3 space-y-4">
+        <div class="bg-slate-900 border border-slate-800/80 rounded-2xl p-4">
+          <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Suggested Connections</h4>
+          <div class="space-y-3 text-xs">
+            <div class="flex items-center justify-between">
+              <div>
+                <h5 class="font-bold text-white">Bethlehem T.</h5>
+                <p class="text-[10px] text-slate-400">AI &amp; Data Engineer</p>
+              </div>
+              <button onclick="this.innerText='Connected'; this.disabled=true;" class="px-2.5 py-1 rounded-lg bg-purple-600/20 text-purple-300 text-[10px] font-semibold hover:bg-purple-600 hover:text-white transition-all">
+                Connect
+              </button>
+            </div>
+            <div class="flex items-center justify-between">
+              <div>
+                <h5 class="font-bold text-white">Kaleb Alemu</h5>
+                <p class="text-[10px] text-slate-400">Mobile App Developer</p>
+              </div>
+              <button onclick="this.innerText='Connected'; this.disabled=true;" class="px-2.5 py-1 rounded-lg bg-purple-600/20 text-purple-300 text-[10px] font-semibold hover:bg-purple-600 hover:text-white transition-all">
+                Connect
+              </button>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
   </body>
 </html>
