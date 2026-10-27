@@ -597,6 +597,7 @@ details.pop[open] > summary .btn--primary { background: var(--coral-dark); }
 .landing-links a:hover { background: rgba(255,255,255,.08); color: #fff; }
 .landing-topnav { background: var(--ink-3); }
 .landing-topnav .burger span { background: #fff; }
+.landing-nav .mobilenav { top: 70px; }
 
 .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .feature-card { padding: 24px; }
