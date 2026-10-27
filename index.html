@@ -1,215 +1,216 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Social Network Platform — Connect &amp; Share</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        darkMode: 'class',
-        theme: {
-          extend: {
-            colors: {
-              brand: {
-                50: '#f5f3ff',
-                500: '#8b5cf6',
-                600: '#7c3aed',
-                700: '#6d28d9',
-              }
-            }
-          }
-        }
-      }
-    </script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <style>
-      body { font-family: 'Plus Jakarta Sans', sans-serif; }
-    </style>
-  </head>
-  <body class="bg-slate-950 text-slate-100 min-h-screen selection:bg-purple-500 selection:text-white">
-    <!-- Navigation Bar -->
-    <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800 px-6 py-3">
-      <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
-        <div class="flex items-center gap-3">
-          <div class="h-10 w-10 rounded-xl bg-gradient-to-tr from-purple-600 to-indigo-500 flex items-center justify-center font-extrabold text-xl text-white shadow-lg shadow-purple-500/30">
-            S
-          </div>
-          <div>
-            <h1 class="text-lg font-bold tracking-tight text-white flex items-center gap-2">
-              Social Pulse <span class="text-[10px] px-2 py-0.5 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30">Live Platform</span>
-            </h1>
-            <p class="text-xs text-slate-400">Connect, share stories &amp; chat in real time</p>
-          </div>
-        </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahber — a social space for our campus &amp; city</title>
+  <link rel="stylesheet" href="css/design-system.css">
+</head>
+<body>
 
-        <!-- Global Search Bar -->
-        <div class="hidden md:flex items-center gap-2 bg-slate-900 border border-slate-800 rounded-xl px-4 py-2 w-80 text-sm focus-within:border-purple-500 transition-colors">
-          <span class="text-slate-400">🔍</span>
-          <input type="text" aria-label="Search" placeholder="Search creators, hashtags, posts..." class="bg-transparent border-none text-white focus:outline-none w-full text-xs" />
-        </div>
+<!-- Top navigation -->
+<header class="topbar landing-nav landing-topnav">
+  <div class="topbar__inner">
+    <a class="brand brand--light" href="index.html"><span class="brand__mark">M</span><span class="brand__name">Mahber</span></a>
+    <nav class="landing-links" aria-label="Marketing">
+      <a href="#features">Features</a>
+      <a href="#screens">Tour</a>
+      <a href="#about">What it is</a>
+    </nav>
+    <div class="topbar__actions">
+      <a class="btn btn--ghost" href="sign_in.html" style="background:transparent;color:#eef1f7;">Log in</a>
+      <a class="btn btn--primary" href="signup.html">Create account</a>
+      <input type="checkbox" id="navtoggle" class="hackcheck">
+      <label class="burger" for="navtoggle" aria-label="Menu"><span></span><span></span><span></span></label>
+      <nav class="mobilenav" aria-label="Menu">
+        <a href="#features">Features</a>
+        <a href="#screens">Tour</a>
+        <a href="#about">What it is</a>
+        <a href="home.html">Open the sample feed</a>
+        <a href="sign_in.html">Log in</a>
+        <a href="signup.html">Create account</a>
+      </nav>
+    </div>
+  </div>
+</header>
 
-        <!-- User Quick Controls -->
-        <div class="flex items-center gap-3">
-          <a href="home.html" class="px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold transition-all">Classic Grid View</a>
-          <a href="your_profile.html" class="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-purple-600/20 border border-purple-500/30 text-purple-200 text-xs font-bold hover:bg-purple-600 hover:text-white transition-all">
-            <div class="h-6 w-6 rounded-full bg-purple-500 flex items-center justify-center text-[10px]">NA</div>
-            <span>My Profile</span>
-          </a>
+<!-- Hero -->
+<section class="landing-hero">
+  <div class="container">
+    <div>
+      <p style="margin-bottom:14px;"><span class="badge badge--honey">Made in Addis Ababa</span></p>
+      <h1>Your campus &amp; city, <em>actually together</em></h1>
+      <p class="lede">
+        Mahber brings study rooms, coffee meetups, football nights and music sessions into one warm,
+        friendly feed — built for Addis, designed for real people.
+      </p>
+      <div class="hero-ctas">
+        <a class="btn btn--primary" href="signup.html">Create your account</a>
+        <a class="btn btn--ghost" href="home.html" style="background:rgba(255,255,255,.08);color:#fff;border-color:rgba(255,255,255,.28);">Peek at the sample feed</a>
+      </div>
+      <p class="hero-note">
+        <span class="proto-tag">Prototype — static demo · sample content only</span>
+      </p>
+    </div>
+
+    <!-- Hero device card: mini feed mock -->
+    <div class="hero-shot" aria-hidden="true">
+      <div class="card">
+        <div class="card__body">
+          <div style="display:flex;align-items:center;gap:10px;">
+            <span class="avatar avatar--s av-teal"><img src="assets/images/ellipse_4.png" alt=""></span>
+            <div style="flex:1;">
+              <b style="font-size:var(--fs-sm);color:var(--ink);display:block;">Samuel Bekele</b>
+              <small class="hint">Addis Tech Meetup · 2h</small>
+            </div>
+            <span class="badge badge--coral">Live soon</span>
+          </div>
+          <p style="font-size:var(--fs-lg);color:var(--ink);"><b>November meetup is GO 🎉</b> Sat 2:00 PM · 5 Kilo campus, LH-210.</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+            <div style="background:var(--coral-soft);border-radius:var(--r-md);padding:12px;">
+              <b style="font-size:var(--fs-sm);color:var(--coral-dark);">64 going</b>
+              <small class="hint" style="display:block;">12 spots left</small>
+            </div>
+            <div style="background:var(--teal-soft);border-radius:var(--r-md);padding:12px;">
+              <b style="font-size:var(--fs-sm);color:var(--teal);">2 talks + live code</b>
+              <small class="hint" style="display:block;">buna break after</small>
+            </div>
+          </div>
+          <div style="display:flex;gap:8px;">
+            <span class="chip">👍 128</span>
+            <span class="chip">💬 23</span>
+            <span class="chip">↗ 11</span>
+          </div>
         </div>
       </div>
-    </header>
-
-    <!-- Main Layout -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-6 grid grid-cols-1 lg:grid-cols-12 gap-6">
-      <!-- Left Sidebar -->
-      <aside class="hidden lg:block lg:col-span-3 space-y-4">
-        <div class="bg-slate-900 border border-slate-800/80 rounded-2xl p-4 space-y-1">
-          <a href="#" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl bg-purple-600 text-white font-semibold text-xs transition-all shadow-md shadow-purple-600/20">
-            <span>🔥</span> Feed
-          </a>
-          <a href="video.html" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-slate-300 hover:bg-slate-800 hover:text-white font-medium text-xs transition-all">
-            <span>🎬</span> Reels &amp; Videos
-          </a>
-          <a href="message.html" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl text-slate-300 hover:bg-slate-800 hover:text-white font-medium text-xs transition-all">
-            <span class="flex items-center gap-3"><span>💬</span> Messages</span>
-            <span class="px-2 py-0.5 rounded-full bg-purple-500 text-white text-[10px] font-bold">4</span>
-          </a>
-          <a href="calander.html" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-slate-300 hover:bg-slate-800 hover:text-white font-medium text-xs transition-all">
-            <span>📅</span> Events &amp; Calendar
-          </a>
-          <a href="saved.html" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-slate-300 hover:bg-slate-800 hover:text-white font-medium text-xs transition-all">
-            <span>🔖</span> Saved Items
-          </a>
-        </div>
-
-        <div class="bg-slate-900 border border-slate-800/80 rounded-2xl p-4">
-          <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Trending Topics</h4>
-          <div class="space-y-2.5 text-xs">
-            <div>
-              <span class="text-purple-400 font-bold block">#AddisTechSummit</span>
-              <span class="text-[10px] text-slate-500">12.4k posts</span>
-            </div>
-            <div>
-              <span class="text-purple-400 font-bold block">#EthioArtExpo</span>
-              <span class="text-[10px] text-slate-500">8.9k posts</span>
-            </div>
-            <div>
-              <span class="text-purple-400 font-bold block">#FullStackDev</span>
-              <span class="text-[10px] text-slate-500">24.1k posts</span>
-            </div>
-          </div>
-        </div>
-      </aside>
-
-      <!-- Center Feed -->
-      <main class="lg:col-span-6 space-y-6">
-        <!-- Story Reels -->
-        <div class="flex items-center gap-3 overflow-x-auto pb-2 scrollbar-none">
-          <div class="flex-shrink-0 w-20 flex flex-col items-center gap-1 cursor-pointer">
-            <div class="h-16 w-16 rounded-2xl bg-gradient-to-tr from-purple-600 to-pink-500 p-0.5 shadow-lg">
-              <div class="h-full w-full rounded-[14px] bg-slate-900 flex items-center justify-center text-purple-400 text-xl font-bold border border-slate-800">+</div>
-            </div>
-            <span class="text-[10px] text-slate-300 font-medium">Add Story</span>
-          </div>
-
-          <div class="flex-shrink-0 w-20 flex flex-col items-center gap-1 cursor-pointer group">
-            <div class="h-16 w-16 rounded-2xl bg-gradient-to-tr from-purple-500 to-pink-500 p-0.5 shadow-lg group-hover:scale-105 transition-transform">
-              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Story" class="h-full w-full rounded-[14px] object-cover" />
-            </div>
-            <span class="text-[10px] text-slate-300 font-medium truncate w-16 text-center">Abebe K.</span>
-          </div>
-
-          <div class="flex-shrink-0 w-20 flex flex-col items-center gap-1 cursor-pointer group">
-            <div class="h-16 w-16 rounded-2xl bg-gradient-to-tr from-purple-500 to-pink-500 p-0.5 shadow-lg group-hover:scale-105 transition-transform">
-              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&q=80" alt="Story" class="h-full w-full rounded-[14px] object-cover" />
-            </div>
-            <span class="text-[10px] text-slate-300 font-medium truncate w-16 text-center">Sara M.</span>
-          </div>
-
-          <div class="flex-shrink-0 w-20 flex flex-col items-center gap-1 cursor-pointer group">
-            <div class="h-16 w-16 rounded-2xl bg-gradient-to-tr from-purple-500 to-pink-500 p-0.5 shadow-lg group-hover:scale-105 transition-transform">
-              <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=150&q=80" alt="Story" class="h-full w-full rounded-[14px] object-cover" />
-            </div>
-            <span class="text-[10px] text-slate-300 font-medium truncate w-16 text-center">Dawit T.</span>
-          </div>
-        </div>
-
-        <!-- Create Post Box -->
-        <div class="bg-slate-900 border border-slate-800/80 rounded-2xl p-4 shadow-sm">
-          <div class="flex items-center gap-3 mb-3">
-            <div class="h-10 w-10 rounded-full bg-purple-600 flex items-center justify-center text-white font-bold text-sm">NA</div>
-            <input type="text" id="postInput" placeholder="What's happening in your tech & creative world?" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-purple-500" />
-          </div>
-          <div class="flex items-center justify-between pt-2 border-t border-slate-800 text-xs">
-            <div class="flex items-center gap-4 text-slate-400">
-              <button class="hover:text-purple-400 flex items-center gap-1">📷 Photo/Video</button>
-              <button class="hover:text-purple-400 flex items-center gap-1">📍 Location</button>
-              <button class="hover:text-purple-400 flex items-center gap-1">😊 Mood</button>
-            </div>
-            <button onclick="alert('Post published to feed!')" class="px-4 py-2 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs transition-all shadow-md shadow-purple-600/20">
-              Post
-            </button>
-          </div>
-        </div>
-
-        <!-- Feed Posts -->
-        <div class="space-y-6">
-          <article class="bg-slate-900 border border-slate-800/80 rounded-2xl overflow-hidden shadow-sm">
-            <div class="p-4 flex items-center justify-between">
-              <div class="flex items-center gap-3">
-                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Avatar" class="h-10 w-10 rounded-full object-cover border border-purple-500/30" />
-                <div>
-                  <h4 class="text-xs font-bold text-white">Helina Girma <span class="text-[10px] text-slate-400 font-normal">· 2h ago</span></h4>
-                  <p class="text-[10px] text-purple-400">UI/UX &amp; Frontend Architect</p>
-                </div>
-              </div>
-              <button class="text-slate-400 hover:text-white">•••</button>
-            </div>
-
-            <p class="px-4 text-xs text-slate-200 leading-relaxed mb-3">
-              Just wrapped up designing the new dark-mode design system for East African tech startups! Clean typography, responsive grid structures, and micro-animations make all the difference. 🎨✨
-            </p>
-
-            <div class="h-72 w-full bg-slate-950 overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80" alt="Design post preview" class="h-full w-full object-cover" />
-            </div>
-
-            <div class="p-4 flex items-center justify-between border-t border-slate-800 text-xs text-slate-400">
-              <button onclick="this.classList.toggle('text-pink-500')" class="flex items-center gap-1.5 hover:text-pink-400">❤️ <span>248 Likes</span></button>
-              <button class="flex items-center gap-1.5 hover:text-purple-400">💬 <span>34 Comments</span></button>
-              <button class="flex items-center gap-1.5 hover:text-purple-400">🔄 <span>12 Shares</span></button>
-            </div>
-          </article>
-        </div>
-      </main>
-
-      <!-- Right Sidebar -->
-      <aside class="hidden lg:block lg:col-span-3 space-y-4">
-        <div class="bg-slate-900 border border-slate-800/80 rounded-2xl p-4">
-          <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Suggested Connections</h4>
-          <div class="space-y-3 text-xs">
-            <div class="flex items-center justify-between">
-              <div>
-                <h5 class="font-bold text-white">Bethlehem T.</h5>
-                <p class="text-[10px] text-slate-400">AI &amp; Data Engineer</p>
-              </div>
-              <button onclick="this.innerText='Connected'; this.disabled=true;" class="px-2.5 py-1 rounded-lg bg-purple-600/20 text-purple-300 text-[10px] font-semibold hover:bg-purple-600 hover:text-white transition-all">
-                Connect
-              </button>
-            </div>
-            <div class="flex items-center justify-between">
-              <div>
-                <h5 class="font-bold text-white">Kaleb Alemu</h5>
-                <p class="text-[10px] text-slate-400">Mobile App Developer</p>
-              </div>
-              <button onclick="this.innerText='Connected'; this.disabled=true;" class="px-2.5 py-1 rounded-lg bg-purple-600/20 text-purple-300 text-[10px] font-semibold hover:bg-purple-600 hover:text-white transition-all">
-                Connect
-              </button>
-            </div>
-          </div>
-        </div>
-      </aside>
     </div>
-  </body>
+  </div>
+</section>
+
+<!-- Feature tiles: every page is reachable from here -->
+<section class="container" id="features" style="padding-top:56px;">
+  <h1>Everything a small city needs to stay in touch</h1>
+  <p class="page-sub" style="margin:8px 0 26px;">Each tile opens a fully designed screen of the prototype.</p>
+
+  <div class="features">
+    <div class="card feature-card">
+      <span class="f-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+      </span>
+      <h3><a href="home.html">A living feed</a></h3>
+      <p>Stories, a composer, and coffee-warm posts — meetups, market finds and derby hype, all beautifully cards.</p>
+    </div>
+
+    <div class="card feature-card">
+      <span class="f-icon" style="background:var(--teal-soft);color:var(--teal);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/></svg>
+      </span>
+      <h3><a href="message.html">Chats that feel human</a></h3>
+      <p>Group planning for events and soft one-on-one chats, with a stack-based mobile layout that keeps your thumb happy.</p>
+    </div>
+
+    <div class="card feature-card">
+      <span class="f-icon" style="background:var(--honey-soft);color:#9a6a10;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+      </span>
+      <h3><a href="calander.html">Community calendar</a></h3>
+      <p>A real October 2026 month grid with Addis events — tech meetups, the derby, art expo nights and hackday finales.</p>
+    </div>
+
+    <div class="card feature-card">
+      <span class="f-icon" style="background:#e8ecf5;color:var(--ink);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="m16 10 6-3v10l-6-3"/></svg>
+      </span>
+      <h3><a href="video.html">Video &amp; sessions</a></h3>
+      <p>Workshop replays, acoustic sets and BTS reels in a clean grid — open one to see the dedicated player page.</p>
+    </div>
+
+    <div class="card feature-card">
+      <span class="f-icon" style="background:var(--coral-soft);color:var(--coral-dark);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M6 3h12v18l-6-4-6 4V3Z"/></svg>
+      </span>
+      <h3><a href="saved.html">A shelf for later</a></h3>
+      <p>Rescue great posts from the scroll of doom. Saved items live in one tidy grid with quick-open actions.</p>
+    </div>
+
+    <div class="card feature-card">
+      <span class="f-icon" style="background:var(--teal-soft);color:var(--teal);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/></svg>
+      </span>
+      <h3><a href="your_profile.html">Profiles with warmth</a></h3>
+      <p>Gradient covers, honest bios, friend grids — yours plus a community organizer's in <a href="others_profile.html">Samuel Bekele's profile</a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Screens / tour -->
+<section class="container" id="screens" style="padding-top:56px;">
+  <h2>Food-first tour of the screens</h2>
+  <p class="page-sub" style="margin:8px 0 20px;">Sanity: every flow you can click below belongs to the same token-based design system — one navy, one coral, zero lorem.</p>
+
+  <div class="preview-strip">
+    <div class="card">
+      <div class="card__body" style="display:grid;gap:10px;">
+        <b style="color:var(--ink);font-size:var(--fs-sm);">The sign-up flow</b>
+        <p class="hint" style="display:inline;">Account → sign in → forgot password → onboarding details → the feed. No data leaves the page — honesty over drama.</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <a class="btn btn--ghost btn--pill-sm" href="sign_in.html">Sign in</a>
+          <a class="btn btn--ghost btn--pill-sm" href="forgot_password.html">Forgot password</a>
+          <a class="btn btn--primary btn--pill-sm" href="signup.html">Sign up</a>
+          <a class="btn btn--ghost btn--pill-sm" href="more_info.html">Onboarding details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card__body" style="display:grid;gap:10px;">
+        <b style="color:var(--ink);font-size:var(--fs-sm);">Watch &amp; chat in one place</b>
+        <p class="hint" style="display:inline;">The video player pairs a poster-frame screen with comments, and messages stacks the list and the conversation on mobile.</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <a class="btn btn--ghost btn--pill-sm" href="video_player.html">Open the player</a>
+          <a class="btn btn--primary btn--pill-sm" href="message.html">Open messages</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Honest about section -->
+<section class="container" id="about" style="padding-top:56px;padding-bottom:60px;">
+  <div class="cta-band">
+    <h2>What this actually is</h2>
+    <p>
+      Mahber is a <b>static HTML &amp; CSS design prototype</b> — every screen works, nothing computes.
+      There is no backend, no accounts and no live data; every post, chat and event you see is sample content.
+      That's the point: it lets you explore the design honestly, screen by screen.
+    </p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+      <a class="btn btn--primary" href="signup.html">Start the tour — create a (demo) account</a>
+      <a class="btn btn--ghost" href="home.html" style="background:rgba(255,255,255,.08);color:#fff;border-color:rgba(255,255,255,.28);">Skip to the feed</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer map -->
+<footer class="site-foot" style="background:#f8f9fb;border-top:1px solid var(--border);">
+  <nav aria-label="Sitemap">
+    <a href="index.html">Home</a>
+    <a href="sign_in.html">Sign in</a>
+    <a href="signup.html">Sign up</a>
+    <a href="forgot_password.html">Forgot password</a>
+    <a href="more_info.html">Onboarding</a>
+    <a href="home.html">Feed</a>
+    <a href="your_profile.html">Your profile</a>
+    <a href="others_profile.html">Others' profile</a>
+    <a href="message.html">Messages</a>
+    <a href="saved.html">Saved</a>
+    <a href="calander.html">Calendar</a>
+    <a href="video.html">Videos</a>
+    <a href="video_player.html">Watch</a>
+  </nav>
+  <p><span class="proto-tag">Prototype — static demo · no live accounts or data</span></p>
+  <p style="margin-top:10px;">© 2026 Mahber — a static HTML/CSS prototype project.</p>
+</footer>
+
+</body>
 </html>

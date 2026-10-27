@@ -1,202 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/> 
-    <link rel="stylesheet" href="message.css">
-    <title>Messages</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messages · Mahber</title>
+  <link rel="stylesheet" href="css/design-system.css">
 </head>
 <body>
-    <aside class="sidebar">
-        <nav class="nav flex-column">
-            <a class="nav-link" href="home.html">
-                <div class="s-image-d navbar-brand"></div>
-              </a>
-          <a class="nav-link" href="#">
-            <i class="material-icons size nav-icon">home</i>
-            <span class="size-text">Home</span>
-          </a>
-          <a class="nav-link" href="calander.html">
-            <i class="material-icons size nav-icon">calendar_month</i>
-            <span class="size-text">Calendar</span>
-          </a>
-          <a class="nav-link active" href="message.html">
-            <i class="material-icons size nav-icon">chat</i>
-            <span class="">Messages</span>
-          </a>
-          <a class="nav-link" href="video.html">
-            <i class="material-icons size nav-icon">subscriptions</i>
-            <span class="size-text">Videos</span>
-          </a>
-          <a class="nav-link" href="saved.html">
-            <i class="material-icons size nav-icon">bookmark</i>
-            <span class="size-text">Saved</span>
-          </a>
-          <a class="nav-link" href="#">
-            <i class="material-icons size nav-icon">search</i>
-            <span class="size-text" id="search-icon">Search</span>
-          </a>
-          <a class="nav-link" href="your_profile.html">
-            <i class="material-icons size nav-icon">account_circle</i>
-            <span class="size-text">Account Settings</span>
-          </a>
-          <a class="nav-link" href="#">
-            <i class="material-icons size nav-icon">logout</i>
-            <span class="size-text">Logout</span>
-          </a>
-        </nav>
-      </aside>
-    <main class="main-container">
-        <div class="container">
-            <h1 class="head">Messages</h1>
-            <div class="chat-container">
-              <div class="chat-header">
-                  <img src="assets/images/ellipse_41.png" alt="User Image">
-                  <div>
-                      <div>Helena Hills</div>
-                      <div class="status">Active 20m ago</div>
-                  </div>
-                  <div class="ml-auto">
-                      <i class="material-icons">phone</i>
-                      <i class="material-icons">videocam</i>
-                  </div>
-              </div>
-              <div class="chat-body">
-                  <div class="message received">
-                      <div class="text">Oh?</div>
-                  </div>
-                  <div class="message received">
-                    <div class="text">Cool</div>
-                </div>
-                <div class="message received">
-                  <div class="text">How does it work?</div>
-              </div>
-                  <div class="message sent">
-                      <div class="text">This is the main chat template</div>
-                  </div>
-                  <div class="message-date text-center text-muted">Nov 30, 2023, 9:41 AM</div>
-                  <div class="message sent">
-                      <div class="text">Simple</div>
-                  </div>
-                  <div class="message sent">
-                    <div class="text">You just edit any text to type in the conversation you want to show, and delete any bubbles you don’t want to use</div>
-                </div>
-                <div class="message sent">
-                  <div class="text">Boom</div>
-              </div>
-                  <div class="message received">
-                      <div class="text">Hmmm</div>
-                  </div>
-                  <div class="message received">
-                    <div class="text">I think I get it</div>
-                </div>
-                <div class="message received">
-                  <div class="text">Will head to the Help Center if I have more questions tho</div>
-              </div>
-              </div>
-              <div class="chat-footer">
-                  <input type="text" placeholder="Enter your message">
-                  <i class="material-icons">insert_emoticon</i>
-                  <i class="material-icons">mic</i>
-                  <i class="material-icons">send</i>
-              </div>
-          </div>
-           </div>
-    </main>
-    <div class="right">
-        <div class="pro">
-            <div class="pro-img"><img src="assets/images/48fb0979b0fbdd8e320622de39475b562ddad56d copy.png" alt="Helen Life"></div>
-            <span class="pro-name">Helen Life</span>
-            <span class="pro-status">Online</span>
-            <span class="pro-role">Instructor</span>
-        </div>
-        <div class="notif">
-            <i class="material-icons notif-icon">notifications</i>
-            <div class="notif-num">5</div>
-        </div>
-        <div class="sidebars">
-          <div class="profile-section">
-              <img src="assets/images/ellipse_4.png" alt="User Image">
-              <div>Helena</div>
-              <div class="text-muted">Active 20m ago</div>
-              <button class="btn btn-primary">View profile</button>
-          </div>
-          <div class="search-bar">
-              <input type="text" class="form-control" placeholder="Search chats">
-          </div>
-          <div class="chat-list">
-              <div class="chat-item">
-                  <img src="assets/images/ellipse_41.png" alt="Chat Image">
-                  <div class="chat-info">
-                      <div class="chat-name">Helena Hills</div>
-                      <div class="chat-message">Will head to the Help Cent...</div>
-                  </div>
-              </div>
-              <div class="chat-item">
-                  <img src="assets/images/ellipse_5.png" alt="Chat Image">
-                  <div class="chat-info">
-                      <div class="chat-name">Carlo Emilio</div>
-                      <div class="chat-message">Let's go</div>
-                  </div>
-              </div>
-              <div class="chat-item">
-                  <img src="assets/images/ellipse_8.png" alt="Chat Image">
-                  <div class="chat-info">
-                      <div class="chat-name">Oscar Davis</div>
-                      <div class="chat-message">Trueeeeee</div>
-                  </div>
-              </div>
-              <div class="chat-item">
-                  <img src="assets/images/graphic.jpeg" alt="Chat Image">
-                  <div class="chat-info">
-                      <div class="chat-name">Daniel Jay Park</div>
-                      <div class="chat-message">lol yeah, are you coming ......</div>
-                  </div>
-              </div>
-              <div class="chat-item">
-                  <img src="assets/images/graphic_1.jpeg" alt="Chat Image">
-                  <div class="chat-info">
-                      <div class="chat-name">Mark Rojas</div>
-                      <div class="chat-message">great catching up over ........</div>
-                  </div>
-              </div>
-              <div class="chat-item">
-                  <img src="assets/images/graphic_2.jpeg" alt="Chat Image">
-                  <div class="chat-info">
-                      <div class="chat-name">Giannis Constantinou</div>
-                      <div class="chat-message">yep 👏💪</div>
-                  </div>
-              </div>
-              <div class="chat-item">
-                  <img src="assets/images/graphic_2.jpeg" alt="Chat Image">
-                  <div class="chat-info">
-                      <div class="chat-name">Briana Lewis</div>
-                      <div class="chat-message">When are you coming....... </div>
-                  </div>
-              </div>
-              <div class="chat-item">
-                  <img src="assets/images/graphic_3.png" alt="Chat Image">
-                  <div class="chat-info">
-                      <div class="chat-name">Mom</div>
-                      <div class="chat-message">Thanks!</div>
-                  </div>
-              </div>
-              <div class="chat-item">
-                  <img src="assets/images/image.jpeg" alt="Chat Image">
-                  <div class="chat-info">
-                      <div class="chat-name">Sherry Roy</div>
-                      <div class="chat-message">Jack needs to find a sitter...</div>
-                  </div>
-              </div>
-          </div>
-      </div>
+
+<header class="topbar">
+  <div class="topbar__inner">
+    <a class="brand" href="home.html"><span class="brand__mark">M</span><span class="brand__name">Mahber</span></a>
+    <div class="topbar__search">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input type="search" placeholder="Search people, events, topics…" aria-label="Search Mahber">
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <nav class="topbar__links" aria-label="Primary">
+      <a href="home.html">Home</a>
+      <a class="is-active" href="message.html">Messages</a>
+      <a href="video.html">Videos</a>
+      <a href="calander.html">Calendar</a>
+      <a href="saved.html">Saved</a>
+    </nav>
+    <div class="topbar__actions">
+      <a class="avatar avatar--s" href="your_profile.html" title="Hanna Girma">
+        <img src="assets/images/48fb0979b0fbdd8e320622de39475b562ddad56d copy.png" alt="Hanna Girma">
+      </a>
+      <input type="checkbox" id="navtoggle" class="hackcheck">
+      <label class="burger" for="navtoggle" aria-label="Menu"><span></span><span></span><span></span></label>
+      <nav class="mobilenav" aria-label="Menu">
+        <a href="home.html">Home</a>
+        <a class="is-active" href="message.html">Messages</a>
+        <a href="video.html">Videos</a>
+        <a href="calander.html">Calendar</a>
+        <a href="saved.html">Saved</a>
+        <a href="your_profile.html">Your profile</a>
+        <a href="others_profile.html">Samuel Bekele</a>
+        <a href="video_player.html">Watch a video</a>
+        <a href="index.html">About Mahber · Sign out (demo)</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="container" style="padding-top:22px;">
+  <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px;flex-wrap:wrap;">
+    <h1 class="page-title">Messages</h1>
+    <span class="hint">Static prototype — sample conversations, replies are not sent.</span>
+  </div>
+
+  <div class="chat-grid">
+
+    <!-- Conversation list -->
+    <section class="card" aria-label="Chats">
+      <div class="card__row" style="border:0;">
+        <input type="search" class="input--plain input-like" placeholder="Search chats" aria-label="Search chats"
+               style="width:100%;padding:10px 14px;border:1.5px solid var(--border-strong);border-radius:var(--r-pill);outline:none;font-size:var(--fs-sm);background:var(--bg);">
+      </div>
+      <div class="chat-list" style="padding:4px 8px 10px;">
+        <a class="chat-item is-active" href="#convo">
+          <span class="avatar avatar--rel av-teal"><img src="assets/images/ellipse_4.png" alt=""><i class="online-dot"></i></span>
+          <span class="chat-item__who">
+            <strong>Samuel Bekele</strong>
+            <p>You: Sat 2 PM works great, see you at LH-210</p>
+          </span>
+          <small class="hint" style="flex:none;">12:41</small>
+        </a>
+        <a class="chat-item" href="#convo">
+          <span class="avatar avatar--rel av-honey"><img src="assets/images/graphic.jpeg" alt=""><i class="online-dot"></i></span>
+          <span class="chat-item__who">
+            <strong>Liya Haile</strong>
+            <p>Sent the Tomoca rooftop invite card ☕</p>
+          </span>
+          <small class="hint" style="flex:none;">11:02</small>
+        </a>
+        <a class="chat-item" href="#convo">
+          <span class="avatar avatar--rel av-slate"><img src="assets/images/ellipse_8.png" alt=""></span>
+          <span class="chat-item__who">
+            <strong>Mikias Alemu</strong>
+            <p>Derby group chat is on 🔒</p>
+          </span>
+          <small class="hint" style="flex:none;">09:37</small>
+        </a>
+        <a class="chat-item" href="#convo">
+          <span class="avatar avatar--rel av-navy"><img src="assets/images/ellipse_41.png" alt=""></span>
+          <span class="chat-item__who">
+            <strong>Dawit Kassa</strong>
+            <p>Rolling credits pick: track 4 or 7?</p>
+          </span>
+          <small class="hint" style="flex:none;">Tue</small>
+        </a>
+        <a class="chat-item" href="#convo">
+          <span class="avatar avatar--rel av-plum"><img src="assets/images/graphic_1.jpeg" alt=""></span>
+          <span class="chat-item__who">
+            <strong>Dani Abebe</strong>
+            <p>Great catching up over injera fir-fir 😄</p>
+          </span>
+          <small class="hint" style="flex:none;">Tue</small>
+        </a>
+        <a class="chat-item" href="#convo">
+          <span class="avatar avatar--rel av-corail"><img src="assets/images/graphic_2.jpeg" alt=""></span>
+          <span class="chat-item__who">
+            <strong>Hanna T.</strong>
+            <p>When are you coming to the volunteer day?</p>
+          </span>
+          <small class="hint" style="flex:none;">Mon</small>
+        </a>
+        <a class="chat-item" href="#convo">
+          <span class="avatar avatar--rel" style="background:linear-gradient(135deg,#d98c2b,#f6b53d);"><img src="assets/images/graphic_3.png" alt=""></span>
+          <span class="chat-item__who">
+            <strong>Mama Almaz</strong>
+            <p>Thanks! Call me when you land</p>
+          </span>
+          <small class="hint" style="flex:none;">Sun</small>
+        </a>
+        <a class="chat-item" href="#convo">
+          <span class="avatar avatar--rel av-navy"><img src="assets/images/image.jpeg" alt=""></span>
+          <span class="chat-item__who">
+            <strong>Yonas Kebede</strong>
+            <p>Watch check — that's a beauty 🙌</p>
+          </span>
+          <small class="hint" style="flex:none;">Oct 4</small>
+        </a>
+      </div>
+    </section>
+
+    <!-- Conversation window -->
+    <section class="card chat-window" id="convo" aria-label="Conversation with Samuel Bekele">
+      <div class="chat-head">
+        <a class="btn btn--icon" href="message.html" style="display:none;" aria-label="Back to chats">‹</a>
+        <span class="avatar avatar--m av-teal" style="position:relative;">
+          <img src="assets/images/ellipse_4.png" alt=""><i class="online-dot"></i>
+        </span>
+        <div class="who" style="flex:1;">
+          <b><a href="others_profile.html" style="color:inherit;">Samuel Bekele</a></b>
+          <small>Active now</small>
+        </div>
+        <button class="btn btn--icon" type="button" aria-label="Call (demo)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-3 2a12 12 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>
+        </button>
+        <button class="btn btn--icon" type="button" aria-label="Video call (demo)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="m16 10 6-3v10l-6-3"/></svg>
+        </button>
+      </div>
+
+      <div class="chat-scroll">
+        <span class="day-divider">Today · Wed, Oct 7</span>
+        <div class="bubble bubble--in">Selam Hanna! Did the venue email reach you — LH-210 was confirmed for Saturday's planning session 🎉 <time>9:02 AM</time></div>
+        <div class="bubble bubble--out">Got it, thank you! I have registered two friends from 4 Kilo as well <time>9:06 AM</time></div>
+        <div class="bubble bubble--in">Perfect. Talks kick off 2 PM sharp — AI in agriculture, then a live system-design block <time>9:08 AM</time></div>
+        <div class="bubble bubble--out">Should I bring the projector adapter just in case? <time>9:14 AM</time></div>
+        <div class="bubble bubble--in">Yes please 🙏 <time>9:20 AM</time></div>
+        <span class="day-divider">Yesterday</span>
+        <div class="bubble bubble--in">Also — are you coming to the derby watch on the 10th? The group needs a designated photographer for the derby night group 😄 <time>8:41 PM</time></div>
+        <div class="bubble bubble--out">Count me in. I'll bring the drum, not the camera 😅 <time>8:52 PM</time></div>
+        <span class="day-divider">Today</span>
+        <div class="bubble bubble--in">All booked. Sat 2 PM works great — see you at LH-210 <time>12:41 PM</time></div>
+      </div>
+
+      <div class="chat-compose">
+        <button class="btn btn--icon" type="button" aria-label="Add attachment (demo)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 9.5h.01M15.5 9.5h.01M8 14c1 1.3 2.4 2 4 2s3-.7 4-2"  /></svg>
+        </button>
+        <input type="text" placeholder="Type a message…" aria-label="Type a message">
+        <button class="btn btn--icon" type="button" aria-label="Voice message (demo)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>
+        </button>
+        <button class="send-btn" type="button" aria-label="Send (demo)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+        </button>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <nav>
+    <a href="index.html">About Mahber</a>
+    <a href="your_profile.html">Your profile</a>
+    <a href="calander.html">Calendar</a>
+    <a href="sign_in.html">Sign in</a>
+  </nav>
+  <p><span class="proto-tag">Prototype — static demo · sample chats, nothing is sent</span></p>
+</footer>
+
+<nav class="tabbar" aria-label="Quick navigation">
+  <a href="home.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+    Home
+  </a>
+  <a class="is-active" href="message.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/></svg>
+    Chats
+  </a>
+  <a href="video.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="m16 10 6-3v10l-6-3"/></svg>
+    Videos
+  </a>
+  <a href="calander.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+    Events
+  </a>
+  <a href="your_profile.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/></svg>
+    Profile
+  </a>
+</nav>
+
 </body>
 </html>
