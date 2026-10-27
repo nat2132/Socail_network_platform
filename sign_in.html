@@ -1,42 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign In</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="sign_in.css" />
-  </head>
-  <body>
-    <div class="main-container">
-      <div class="flex-row-ee">
-        <div class="s-image-d"><span class="s-text-d">Sign in</span></div>
-        <div class="vector"><div class="vector-1"></div></div>
-        <div class="vector-2"><div class="vector-3"></div></div>
-        <div class="vector-4"></div>
-        <div class="vector-5"></div>
-      </div>
-      <div class="inputs">
-        <form action=" " method="post">  
-            <label for="Fullname">
-                <input name="Fullname" type="text" placeholder="Username or ID">
-                <i class="material-icons">person</i>
-            </label> 
-            <label for="Email">
-                <input name="Email" type="email" placeholder="Email"> 
-                <i class="material-icons">mail</i>
-            </label>
-            <label for="password">
-                <input name="password" type="password" placeholder="Password">
-                <i class="material-icons">lock</i>
-            </label>
-            <a href="forgot_password.html"><span class="fp">Forgot Password?</span></a>
-            <button type="submit">Log in</button>
-        </form>
-    </div>
-    <div class="notice"><span class="aa">Already have an account? </span><a href="signup.html"><span class="log">Create account</span></a></div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign in · Mahber</title>
+  <link rel="stylesheet" href="css/design-system.css">
+</head>
+<body class="auth">
+  <div class="auth__bg" aria-hidden="true"></div>
+
+  <div class="auth__wrap">
+    <div class="auth__head">
+      <a class="brand" href="index.html" aria-label="Mahber home">
+        <span class="brand__mark">M</span><span class="brand__name">Mahber</span>
+      </a>
+      <h1 style="margin-top:28px;">Welcome back to your community</h1>
+      <p style="color:var(--muted);margin-top:8px;max-width:34em;">
+        The campus &amp; city social space — meetups, messages and moments, all in one place.
+      </p>
+      <div class="auth-art">
+        <div class="auth-art__window">
+          <div class="auth-art__bar"><i></i><i></i><i></i></div>
+          <div class="card__body" style="background:var(--bg); display:grid; gap:10px; padding:20px;">
+            <div class="bubble bubble--in" style="max-width:85%;">Selam! Are you coming to the coffee meetup at Tomoca on Saturday? ☕
+              <time>9:41 AM</time></div>
+            <div class="bubble bubble--out" style="max-width:85%;">Definitely — saving you a seat near the window
+              <time>9:44 AM</time></div>
+            <div class="bubble bubble--in" style="max-width:85%;">Perfect. I'll add it to the events calendar too
+              <time>9:45 AM</time></div>
+          </div>
+        </div>
       </div>
     </div>
-  </body>
+
+    <div class="auth__panel">
+      <div class="card auth__card">
+        <h1>Sign in</h1>
+        <p class="sub">Good to see you again — your feed missed you.</p>
+
+        <label class="field">
+          <span class="field__label">Email or username</span>
+          <input class="input" type="text" name="identifier" placeholder="you@example.com" autocomplete="off">
+          <svg class="field__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/></svg>
+        </label>
+
+        <label class="field">
+          <span class="field__label">Password</span>
+          <input class="input" type="password" name="password" placeholder="••••••••" autocomplete="off">
+          <svg class="field__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+        </label>
+
+        <p class="hint" style="text-align:right;margin:-6px 0 14px;">
+          <a href="forgot_password.html">Forgot password?</a>
+        </p>
+
+        <a class="btn btn--primary btn--block" href="home.html">Log in</a>
+
+        <p class="auth__foot">
+          New to Mahber? <a href="signup.html">Create an account</a>
+        </p>
+      </div>
+      <p class="hint" style="text-align:center;margin-top:12px;">
+        Prototype demo — no accounts are stored and nothing is submitted; the log in button simply walks you to the sample feed.
+      </p>
+    </div>
+  </div>
+</body>
 </html>

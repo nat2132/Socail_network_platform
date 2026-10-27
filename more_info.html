@@ -1,75 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>More Information</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="more_info.css" />
-  </head>
-  <body>
-    <div class="main-container">
-      <div><a href="signup.html"><i class="material-icons arrow">arrow_circle_left</i></a></div>
-      <div class="flex-row-ee">
-        <div class="s-image-d"><span class="s-text-d">More info</span></div>
-        <div class="vector"><div class="vector-1"></div></div>
-        <div class="vector-2"><div class="vector-3"></div></div>
-        <div class="vector-4"></div>
-        <div class="vector-5"></div>
-      </div>
-      <div class="inputs">
-        <form action=" " method="post">  
-            <label for="ID">
-                <input name="ID" type="text" placeholder="ID">
-                <i class="material-icons">badge</i>
-            </label> 
-            <label for="Batch">
-                <input name="Batch" type="number" placeholder="Batch Number">
-                <i class="material-icons">settings_accessibility</i>
-            </label> 
-            <label for="pro">
-              <select name="pro" class="Role">
-                 <option class="gray" value="" disabled selected>What is your working hours?</option>
-                  <option value="Part Time">Part Time</option>
-                  <option value="Full Time">Full Time</option>
-              </select>
-              <i class="material-icons">work</i>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About you · Mahber</title>
+  <link rel="stylesheet" href="css/design-system.css">
+</head>
+<body class="auth">
+  <div class="auth__bg" aria-hidden="true"></div>
+
+  <div class="auth__wrap">
+    <div class="auth__panel" style="max-width:470px;">
+      <a class="btn btn--icon btn--ghost" href="signup.html" aria-label="Back to sign up">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m11 18-6-6 6-6"/></svg>
+      </a>
+
+      <div class="card auth__card" style="margin-top:16px;">
+        <p style="margin-bottom:14px;">
+          <span class="badge badge--coral">Step 2 of 2</span>
+        </p>
+        <h1>Tell us about you</h1>
+        <p class="sub">A few quick details so we can suggest the right groups, classes and events around the city.</p>
+
+        <form action="#">
+          <label class="field">
+            <span class="field__label">Student ID</span>
+            <input class="input" type="text" name="id" placeholder="SGR/1234/16" autocomplete="off">
+            <svg class="field__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="11" r="1.5"/><path d="M13 9h5M13 13h5"/></svg>
           </label>
-            <label for="pro">
-                <select name="pro" class="Role">
-                  <option class="gray" value="" disabled selected">Acadamic Program?</option>
-                    <option value="ACT Undergraduate Program">ACT Undergraduate Program</option>
-                    <option value="ACT Masters Program">ACT Masters Program</option>
-                    <option value="MIU Masters Program">MIU Masters Program</option>
-                </select>
-                <i class="material-icons">school</i>
-            </label>
-            <label for="Feild">
-              <select name="Feild">
-                <option class="gray" value="" disabled selected>What are your majoring in?</option>
-                  <option value="Accounting & Finance">Accounting & Finance</option>
-                  <option value="Business Adminsteration">Business Adminsteration</option>
-                  <option value="Computer Science">Computer Science</option>
-              </select>
-              <i class="material-icons">workspace_premium</i>
+
+          <label class="field">
+            <span class="field__label">Batch number</span>
+            <input class="input" type="text" name="batch" placeholder="B7" autocomplete="off">
+            <svg class="field__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h3v16h-3"/><rect x="5" y="7" width="11" height="10" rx="1.5"/></svg>
           </label>
-          <label for="section">
-            <input name="section" type="text" placeholder="Section">
-            <i class="material-icons">group</i>
-        </label>
-            <label for="job">
-                <input name="job" type="text" placeholder="Job Position">
-                <i class="material-icons">apartment</i>
-            </label>
-            <label for="edu">
-              <input name="edu" type="text" placeholder="What is your educational background?">
-              <i class="material-icons">work</i>
+
+          <label class="field">
+            <span class="field__label">Study mode</span>
+            <select name="mode">
+              <option disabled selected>Select how you study</option>
+              <option>Part time</option>
+              <option>Full time</option>
+            </select>
+            <svg class="field__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/></svg>
           </label>
-            <button type="submit">Continue</button>
+
+          <label class="field">
+            <span class="field__label">Academic program</span>
+            <select name="program">
+              <option disabled selected>Choose your program</option>
+              <option>Undergraduate program</option>
+              <option>Masters program</option>
+              <option>Diploma program</option>
+            </select>
+            <svg class="field__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 9 10-4 10 4-10 4-10-4Z"/><path d="M6 11v5c0 1.5 2.7 2.5 6 2.5s6-1 6-2.5v-5"/></svg>
+          </label>
+
+          <label class="field">
+            <span class="field__label">Field of study</span>
+            <select name="field">
+              <option disabled selected>What are you majoring in?</option>
+              <option>Accounting &amp; finance</option>
+              <option>Business administration</option>
+              <option>Computer science</option>
+              <option>Electrical engineering</option>
+              <option>Medicine</option>
+            </select>
+            <svg class="field__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8 16 3-10 3 6h-3"/></svg>
+          </label>
+
+          <label class="field">
+            <span class="field__label">Section</span>
+            <input class="input" type="text" name="section" placeholder="Section 3" autocomplete="off">
+            <svg class="field__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><circle cx="16" cy="9" r="2.5"/><path d="M3 20c0-3.3 2.7-5 6-5s6 1.7 6 5"/><path d="M15.5 20c0-2.4 1.4-3.5 3.2-3.5 1.5 0 3.3.9 2.3 3.5"/></svg>
+          </label>
+
+          <label class="field">
+            <span class="field__label">Job position (if working)</span>
+            <input class="input" type="text" name="job" placeholder="Junior developer" autocomplete="off">
+            <svg class="field__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21h16"/><rect x="5" y="9" width="14" height="12" rx="1.5"/><path d="M12 9v12M8 9V5h8v4"/></svg>
+          </label>
+
+          <a class="btn btn--primary btn--block" href="home.html">Finish &amp; enter Mahber</a>
+          <p class="hint" style="margin-top:10px;">You can edit all of these later from your profile.</p>
         </form>
-    </div>
-    <div class="notice"><span class="aa">Already have an account? </span><a href="sign_in.html"><span class="log">Login</span></a></div>
+
+        <p class="auth__foot">
+          Already have an account? <a href="sign_in.html">Log in</a>
+        </p>
       </div>
-  </body>
+      <p class="hint" style="text-align:center;margin-top:12px;">
+        Prototype demo — answers stay on this page; Finish opens the sample feed.
+      </p>
+    </div>
+  </div>
+</body>
 </html>
