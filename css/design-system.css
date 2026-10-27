@@ -155,7 +155,7 @@ h3 { font-size: var(--fs-lg); font-weight: 700; }
 .hackcheck:checked ~ .burger span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
 
 .mobilenav {
-  display: none; position: absolute; top: 64px; right: 0;
+  display: none; position: absolute; top: 64px; right: 20px;
   min-width: 230px; background: var(--surface);
   border: 1px solid var(--border); border-radius: var(--r-md);
   box-shadow: var(--shadow-pop); padding: 8px;
@@ -647,5 +647,9 @@ details.pop[open] > summary .btn--primary { background: var(--coral-dark); }
   .auth__card { padding: 24px 18px; }
 }
 
-/* misc print-safe helper */
+.stack { display: grid; gap: 18px; }
+.feed-layout { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 22px; align-items: start; margin-top: 26px; padding-bottom: 30px; }
+@media (max-width: 1020px) {
+  .feed-layout { grid-template-columns: 1fr; }
+}
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }

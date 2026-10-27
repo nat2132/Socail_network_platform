@@ -1,363 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="home.css">
-    <title>Home page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home · Mahber</title>
+  <link rel="stylesheet" href="css/design-system.css">
 </head>
 <body>
-    <aside class="sidebar">
-        <nav class="nav flex-column">
-            <a class="nav-link" href="#">
-                <div class="s-image-d navbar-brand"></div>
-              </a>
-          <a class="nav-link actives" href="#">
-            <i class="material-icons size nav-icon">home</i>
-            <span class="size-text">Home</span>
-          </a>
-          <a class="nav-link" href="calander.html">
-            <i class="material-icons size nav-icon">calendar_month</i>
-            <span class="size-text">Calendar</span>
-          </a>
-          <a class="nav-link" href="message.html">
-            <i class="material-icons size nav-icon">chat</i>
-            <span class="size-text">Messages</span>
-          </a>
-          <a class="nav-link" href="video.html">
-            <i class="material-icons size nav-icon">subscriptions</i>
-            <span class="size-text">Videos</span>
-          </a>
-          <a class="nav-link" href="saved.html">
-            <i class="material-icons size nav-icon">bookmark</i>
-            <span class="size-text">Saved</span>
-          </a>
-          <a class="nav-link" href="#" id="search-icon">
-            <i class="material-icons size nav-icon">search</i>
-            <span class="size-text">Search</span>
-          </a>
-          <a class="nav-link" href="your_profile.html">
-            <i class="material-icons size nav-icon">account_circle</i>
-            <span class="size-text">Account Settings</span>
-          </a>
-          <a class="nav-link" href="#">
-            <i class="material-icons size nav-icon">logout</i>
-            <span class="size-text">Logout</span>
-          </a>
-        </nav>
-      </aside>
-      <i class="material-icons menu">menu</i>
-      <div class="search-results" id="search-results">
-        <div class="search-bar">
-          <input type="text" placeholder="Search">
-          <i class="material-icons" id="close-search">close</i>
+
+<header class="topbar">
+  <div class="topbar__inner">
+    <a class="brand" href="home.html"><span class="brand__mark">M</span><span class="brand__name">Mahber</span></a>
+    <div class="topbar__search">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input type="search" placeholder="Search people, events, topics…" aria-label="Search Mahber">
+    </div>
+    <nav class="topbar__links" aria-label="Primary">
+      <a class="is-active" href="home.html">Home</a>
+      <a href="message.html">Messages</a>
+      <a href="video.html">Videos</a>
+      <a href="calander.html">Calendar</a>
+      <a href="saved.html">Saved</a>
+    </nav>
+    <div class="topbar__actions">
+      <a class="avatar avatar--s" href="your_profile.html" title="Hanna Girma">
+        <img src="assets/images/48fb0979b0fbdd8e320622de39475b562ddad56d copy.png" alt="Hanna Girma">
+      </a>
+      <input type="checkbox" id="navtoggle" class="hackcheck">
+      <label class="burger" for="navtoggle" aria-label="Menu"><span></span><span></span><span></span></label>
+      <nav class="mobilenav" aria-label="Menu">
+        <a class="is-active" href="home.html">Home</a>
+        <a href="message.html">Messages</a>
+        <a href="video.html">Videos</a>
+        <a href="calander.html">Calendar</a>
+        <a href="saved.html">Saved</a>
+        <a href="your_profile.html">Your profile</a>
+        <a href="others_profile.html">Samuel Bekele</a>
+        <a href="video_player.html">Watch: Java in 90 seconds</a>
+        <a href="index.html">About Mahber · Sign out (demo)</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <div class="feed-layout">
+
+    <!-- ══════════ Center column: stories, composer, posts ══════════ -->
+    <div class="stack">
+
+      <!-- Stories rail -->
+      <section aria-label="Stories">
+        <div class="stories">
+          <button class="story" type="button">
+            <span class="story__ring story__ring--add">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+            </span>
+            Add story
+          </button>
+          <button class="story" type="button">
+            <span class="story__ring"><img src="assets/images/ellipse_4.png" alt="Samuel Bekele's story"></span>
+            Samuel B.
+          </button>
+          <button class="story" type="button">
+            <span class="story__ring"><img src="assets/images/graphic.jpeg" alt="Liya Haile's story"></span>
+            Liya H.
+          </button>
+          <button class="story" type="button">
+            <span class="story__ring"><img src="assets/images/ellipse_41.png" alt="Dawit Kassa's story"></span>
+            Dawit K.
+          </button>
+          <button class="story" type="button">
+            <span class="story__ring"><img src="assets/images/ellipse_5.png" alt="Betelhem A.'s story"></span>
+            Betelhem A.
+          </button>
+          <button class="story" type="button">
+            <span class="story__ring"><img src="assets/images/graphic_1.jpeg" alt="Dani Abebe's story"></span>
+            Dani A.
+          </button>
+          <button class="story" type="button">
+            <span class="story__ring"><img src="assets/images/ellipse_8.png" alt="Mikias Alemu's story"></span>
+            Mikias A.
+          </button>
+          <button class="story" type="button">
+            <span class="story__ring"><img src="assets/images/small_post.jpeg" alt="Rahel M.'s story"></span>
+            Rahel M.
+          </button>
         </div>
-        <div class="result-item">
-          <img src="assets/images/ellipse_4.png" alt="Helena Hills">
-          <div>
-            <h5>Helena Hills</h5>
-            <span>Instructor</span>
+      </section>
+
+      <!-- Composer -->
+      <section class="card" aria-label="Create a post">
+        <a class="composer" href="#" aria-label="Write a post (demo)">
+          <span class="avatar av-corail"><img src="assets/images/48fb0979b0fbdd8e320622de39475b562ddad56d copy.png" alt=""></span>
+          <span class="card composer__box">What's happening around Addis, Hanna?</span>
+        </a>
+        <div class="composer__actions">
+          <div class="composer__btns">
+            <button class="chip" type="button">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.5"/><path d="m5 7 2-2M17 5l2 2" opacity="0"/></svg>
+              Photo
+            </button>
+            <button class="chip" type="button">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              Location
+            </button>
+            <button class="chip" type="button">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 10h.01M15.5 10h.01M8 14.5c1 1.2 2.4 1.8 4 1.8s3-.6 4-1.8"/></svg>
+              Feeling
+            </button>
+            <button class="chip" type="button">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+              Event
+            </button>
           </div>
+          <button class="btn btn--primary btn--pill-sm" type="button">Publish</button>
         </div>
-        <div class="result-item">
-          <img src="assets/images/ellipse_41.png" alt="Carlo Emilio">
-          <div>
-            <h5>Carlo Emilio</h5>
-            <span>College stuff</span>
+        <p class="hint" style="padding:0 18px 14px;">Composer is a visual affordance only — this prototype has no backend.</p>
+      </section>
+
+      <!-- Post 1: event post, text only -->
+      <article class="card post-card">
+        <div class="post-head">
+          <a href="others_profile.html" class="avatar av-teal"><img src="assets/images/ellipse_4.png" alt="Samuel Bekele"></a>
+          <div class="post-head__who">
+            <a class="post-head__name" href="others_profile.html">Samuel Bekele</a>
+            <span class="post-head__meta">Addis Tech Meetup <span class="dot"></span> 2h <span class="dot"></span> <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round"/></svg></span>
           </div>
+          <button class="btn btn--icon" aria-label="Post options">
+            <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="5" cy="12" r="1.8"/><circle cx="12" cy="12" r="1.8"/><circle cx="19" cy="12" r="1.8"/></svg>
+          </button>
         </div>
-        <div class="result-item">
-          <img src="assets/images/ellipse_5.png" alt="Danial Jay Park">
-          <div>
-            <h5>Danial Jay Park</h5>
-            <span>Instructor</span>
-          </div>
+        <div class="post-body">
+          <p>Planning session is <b>locked in 🔒</b> — the November Addis Tech Meetup happens Saturday at 2:00 PM, 5&nbsp;Kilo campus, lecture hall LH-210.</p>
+          <p style="margin-top:8px;">On the bill: <span class="tagline">#AddisTechMeetup</span> talks on AI for agriculture, a live-coding block on system design, and of course buna break. Bring a laptop and a friend — students from any campus welcome!</p>
         </div>
-        <div class="result-item">
-          <img src="assets/images/ellipse_81.png" alt="John Michael">
-          <div>
-            <h5>John Michael</h5>
-            <span>Instructor</span>
+        <div class="card__row" style="display:flex;gap:12px;align-items:center;margin:12px 18px;padding:14px;background:var(--bg);border:1px solid var(--border);border-radius:var(--r-md);border-top:1px solid var(--border);">
+          <span class="ev-date" style="width:46px;text-align:center;background:var(--coral-soft);border-radius:var(--r-sm);padding:6px 0;flex:none;">
+            <b style="display:block;color:var(--coral-dark);font-size:var(--fs-lg);line-height:1;">08</b>
+            <em style="font-style:normal;font-size:9px;font-weight:700;color:#c47a5c;text-transform:uppercase;">Oct</em>
+          </span>
+          <div style="flex:1;min-width:0;">
+            <b style="font-size:var(--fs-sm);color:var(--ink);">Addis Tech Meetup · Nov planning</b>
+            <p style="font-size:var(--fs-xs);color:var(--muted);">Sat 2:00 PM · 5 Kilo campus, LH-210 · 64 going</p>
           </div>
+          <a class="btn btn--soft btn--pill-sm" href="calander.html">See in calendar</a>
+        </div>
+        <div class="post-foot">
+          <button class="reaction" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 20.5S4 15.6 2.3 11.2C.9 7.7 3.2 4 6.9 4c2.3 0 4.1 1.3 5.1 3.1C13 5.3 14.8 4 17.1 4c3.7 0 6 3.7 4.6 7.2C20 15.6 12 20.5 12 20.5Z"/></svg>
+            128
+          </button>
+          <button class="reaction" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M21 12c0 4.4-4 8-9 8-1.2 0-2.4-.2-3.5-.6L4 21l1.6-3.9C4.6 15.7 4 13.9 4 12c0-4.4 4-8 9-8s8 3.6 8 8Z"/></svg>
+            23
+          </button>
+          <button class="reaction" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v6a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-6"/><path d="M12 16V4"/><path d="m7 9 5-5 5 5"/></svg>
+            11
+          </button>
+          <button class="reaction reaction--saved reaction--end" type="button">
+            <svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M6 3h12v18l-6-4-6 4V3Z"/></svg>
+            Saved
+          </button>
+        </div>
+        <div class="comment-row">
+          <span class="avatar avatar--s av-navy"><img src="assets/images/48fb0979b0fbdd8e320622de39475b562ddad56d copy.png" alt=""></span>
+          <input class="input--comment" type="text" placeholder="Write a comment…" aria-label="Write a comment">
+          <button class="btn btn--soft btn--pill-sm" type="button">Post</button>
+        </div>
+      </article>
+
+      <!-- Post 2: photo post (local photography asset) -->
+      <article class="card post-card">
+        <div class="post-head">
+          <a href="others_profile.html" class="avatar av-teal"><img src="assets/images/graphic.jpeg" alt="Liya Haile"></a>
+          <div class="post-head__who">
+            <a class="post-head__name" href="others_profile.html">Liya Haile</a>
+            <span class="post-head__meta">Addis Creators Club <span class="dot"></span> 6h</span>
+          </div>
+          <button class="btn btn--icon" aria-label="Post options">
+            <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="5" cy="12" r="1.8"/><circle cx="12" cy="12" r="1.8"/><circle cx="19" cy="12" r="1.8"/></svg>
+          </button>
+        </div>
+        <div class="post-body">
+          <p>Say hi to Abel, our 500th member this month 🎉 He walked into the Piassa study room in June with zero design experience — this Saturday he's showing the club his first UI mockups during the <span class="tagline">#MadeInAddis</span> showcase.</p>
+        </div>
+        <img class="post-media" src="assets/images/rectangle_1.jpeg" alt="Abel, a new Mahber Creators Club member, photographed in denim">
+        <div class="post-foot">
+          <button class="reaction reaction--liked" type="button">
+            <svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 20.5S4 15.6 2.3 11.2C.9 7.7 3.2 4 6.9 4c2.3 0 4.1 1.3 5.1 3.1C13 5.3 14.8 4 17.1 4c3.7 0 6 3.7 4.6 7.2C20 15.6 12 20.5 12 20.5Z"/></svg>
+            342
+          </button>
+          <button class="reaction" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M21 12c0 4.4-4 8-9 8-1.2 0-2.4-.2-3.5-.6L4 21l1.6-3.9C4.6 15.7 4 13.9 4 12c0-4.4 4-8 9-8s8 3.6 8 8Z"/></svg>
+            57
+          </button>
+          <button class="reaction" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v6a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-6"/><path d="M12 16V4"/><path d="m7 9 5-5 5 5"/></svg>
+            18
+          </button>
+          <button class="reaction reaction--end" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M6 3h12v18l-6-4-6 4V3Z"/></svg>
+            Save
+          </button>
+        </div>
+        <div class="comments-list">
+          <div class="cmt">
+            <span class="avatar avatar--s av-honey"><img src="assets/images/ellipse_41.png" alt=""></span>
+            <div class="cmt__bubble"><strong>Dawit Kassa</strong><p>Congrats Abel! The mockups looked sharp when I previewed them 👏</p></div>
+          </div>
+          <button class="show-more" type="button">Show all 56 comments</button>
+        </div>
+        <div class="comment-row">
+          <span class="avatar avatar--s av-corail"><img src="assets/images/48fb0979b0fbdd8e320622de39475b562ddad56d copy.png" alt=""></span>
+          <input class="input--comment" type="text" placeholder="Write a comment…" aria-label="Write a comment">
+          <button class="btn btn--soft btn--pill-sm" type="button">Post</button>
+        </div>
+      </article>
+
+      <!-- Post 3: football event post (text) -->
+      <article class="card post-card">
+        <div class="post-head">
+          <a href="others_profile.html" class="avatar av-slate"><img src="assets/images/ellipse_8.png" alt="Mikias Alemu"></a>
+          <div class="post-head__who">
+            <a class="post-head__name" href="others_profile.html">Mikias Alemu</a>
+            <span class="post-head__meta">Addis Derby Watch <span class="dot"></span> 1d</span>
+          </div>
+          <button class="btn btn--icon" aria-label="Post options">
+            <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="5" cy="12" r="1.8"/><circle cx="12" cy="12" r="1.8"/><circle cx="19" cy="12" r="1.8"/></svg>
+          </button>
+        </div>
+        <div class="post-body">
+          <p>Derby night at last, kickoff at 7 PM sharp ⚽ <span class="tagline">#AddisDerby</span> — Saint George square off against Fasil Kenema at Addis Ababa Stadium. The fan group is meeting at 4:30 by the gate; flag and drum carriers get the good seats.</p>
+          <p style="margin-top:8px;">Vote in the group chat for the post-match landmark: Tomoca or the shiro place on Sudan St. is at 23 votes already 😅</p>
+        </div>
+        <div class="post-foot">
+          <button class="reaction" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 20.5S4 15.6 2.3 11.2C.9 7.7 3.2 4 6.9 4c2.3 0 4.1 1.3 5.1 3.1C13 5.3 14.8 4 17.1 4c3.7 0 6 3.7 4.6 7.2C20 15.6 12 20.5 12 20.5Z"/></svg>
+            96
+          </button>
+          <button class="reaction" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M21 12c0 4.4-4 8-9 8-1.2 0-2.4-.2-3.5-.6L4 21l1.6-3.9C4.6 15.7 4 13.9 4 12c0-4.4 4-8 9-8s8 3.6 8 8Z"/></svg>
+            41
+          </button>
+          <button class="reaction" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v6a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-6"/><path d="M12 16V4"/><path d="m7 9 5-5 5 5"/></svg>
+            7
+          </button>
+          <button class="reaction reaction--end" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M6 3h12v18l-6-4-6 4V3Z"/></svg>
+            Save
+          </button>
+        </div>
+        <div class="comment-row">
+          <span class="avatar avatar--s av-corail"><img src="assets/images/48fb0979b0fbdd8e320622de39475b562ddad56d copy.png" alt=""></span>
+          <input class="input--comment" type="text" placeholder="Write a comment…" aria-label="Write a comment">
+          <button class="btn btn--soft btn--pill-sm" type="button">Post</button>
+        </div>
+      </article>
+
+      <p class="hint" style="text-align:center;">End of today's sample feed · <a href="index.html">what is Mahber?</a></p>
+    </div>
+
+    <!-- ══════════ Right rail ══════════ -->
+    <aside class="rail" aria-label="Sidebar">
+      <div class="card rail-card">
+        <div class="person-row" style="margin-bottom:0;">
+          <a class="avatar avatar--m av-corail" href="your_profile.html"><img src="assets/images/48fb0979b0fbdd8e320622de39475b562ddad56d copy.png" alt=""></a>
+          <div>
+            <span class="pname" style="display:block;">Hanna Girma</span>
+            <span class="pmeta">Software engineering · AAU</span>
+          </div>
+          <a class="btn btn--ghost btn--pill-sm" href="your_profile.html" style="margin-left:auto;">View profile</a>
         </div>
       </div>
-    <main class="main-container">
-        <div class="row">
-            <span class="recent">Recents</span>
-        </div>
-        <div class="row text-center">
-            <i class="material-icons arrow-icon" id="prev-arrow">arrow_back_ios</i>
-            <div class="recent-container">
-                <div class="col-2">
-                    <img class="recent-img" src="assets/images/873a411918e5f83ef56349627f7d99976bc2143e.png" alt="James Cooper">
-                    <span class="recent-names">James Cooper</span>
-                </div>
-                <div class="col-2">
-                    <img class="recent-img" src="assets/images/ellipse_4.png" alt="Esther Howard">
-                    <span class="recent-names">Esther Howard</span>
-                </div>
-                <div class="col-2">
-                    <img class="recent-img" src="assets/images/ellipse_41.png" alt="Robert Fox">
-                    <span class="recent-names">Robert Fox</span>
-                </div>
-                <div class="col-2">
-                    <img class="recent-img" src="assets/images/ellipse_5.png" alt="John Wilson">
-                    <span class="recent-names">John Wilson</span>
-                </div>
-                <div class="col-2">
-                    <img class="recent-img" src="assets/images/ellipse_81.png" alt="Navin Jayavant">
-                    <span class="recent-names">Navin Jayavant</span>
-                </div>
-                <div class="col-2">
-                    <img class="recent-img" src="assets/images/873a411918e5f83ef56349627f7d99976bc2143e.png" alt="James Cooper">
-                    <span class="recent-names">James Cooper</span>
-                </div>
-                <div class="col-2">
-                    <img class="recent-img" src="assets/images/ellipse_4.png" alt="Esther Howard">
-                    <span class="recent-names">Esther Howard</span>
-                </div>
-                <div class="col-2">
-                    <img class="recent-img" src="assets/images/ellipse_41.png" alt="Robert Fox">
-                    <span class="recent-names">Robert Fox</span>
-                </div>
-                <div class="col-2">
-                    <img class="recent-img" src="assets/images/ellipse_5.png" alt="John Wilson">
-                    <span class="recent-names">John Wilson</span>
-                </div>
-                <div class="col-2">
-                    <img class="recent-img" src="assets/images/ellipse_81.png" alt="Navin Jayavant">
-                    <span class="recent-names">Navin Jayavant</span>
-                </div>
-            </div>
-            <i class="material-icons arrow-icon" id="next-arrow">arrow_forward_ios</i>
-        </div>
-        <i class="material-icons add" id="addIcon">add_circle</i>
-        <div class="add-options" id="addOptions">
-            <div class="option" id="createPost">Create a Post</div>
-            <div class="option" id="createEvent">Create an Event</div>
-            <div class="option" id="createVideo">Create a Video</div>
-        </div>
-        <div class="main">
-        <div class="row mt-4 justify-content-center">
-            <div class="col-12 col-md-8 col-lg-6">
-                <div class="card mb-3 shadow border-0 rounded">
-                    <div class="card-header d-flex justify-content-between align-items-center">
-                        <div class="d-flex align-items-center">
-                            <img src="assets/images/ellipse_4.png" alt="User Profile Picture" class="rounded-circle" width="70px" style="margin-right: 20px;">
-                            <div class="info">
-                                <h4 class="mb-0 name">Esther Howard</h4>
-                                <h5 class="text-muted mb-0">Instructor,<span>Msc</span></h5>
-                                <h5 class="text-muted">3 min ago</h5>
-                            </div>
-                        </div>
-                        <i class="fas fa-ellipsis-v text-muted"></i>
-                    </div>
-                    <img src="assets/images/rectangle_1.jpeg" alt="Post Image" class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-text">Sometimes it's a hot take, and sometimes it's just a text for a post. Since it’s a social app, sometimes it's a stuff take.</h4>
-                    </div>
-                    <div class="card-footer d-flex justify-content-between align-items-center">
-                        <div class="d-flex align-items-center like-comment">
-                            <span class="d-flex align-items-center" style="font-size: 20px;"><i class="material-icons">favorite</i><span>34</span><span class="text">likes</span></span>
-                            <span class="d-flex align-items-center" style="font-size: 20px;"><i class="material-icons">comment</i><span>54</span><span class="text">comments</span></span>
-                            <span class="d-flex align-items-center" style="font-size: 20px;"><i class="material-icons">bookmarks</i><span class="text">Save</span></span>
-                        </div>
-                        </div>
-                        <div class="comment-section mt-3">
-                            <input type="text" class="form-control" placeholder="Add a comment...">
-                            <button class="btn btn-primary">Post</button>
-                        </div>
-                        <div class="comments">
-                            <div class="comment">
-                                <img src="assets/images/ellipse_4.png" alt="" width="50px" style="border-radius: 50%;">
-                                <span class="user">John Doe:</span>
-                                <span class="text">Great post!</span>
-                            </div>
-                            <div class="comment">
-                                <img src="assets/images/ellipse_41.png" alt="" width="50px" style="border-radius: 50%;">
-                                <span class="user">Jane Smith:</span>
-                                <span class="text">Thanks for sharing.</span>
-                            </div>
-                            <div class="comment">
-                                <img src="assets/images/ellipse_5.png" alt="" width="50px"  style="border-radius: 50%;">
-                                <span class="user">Alex Johnson:</span>
-                                <span class="text">Really insightful!</span>
-                            </div>
-                            <span class="show" style="margin-left: 30px; cursor: pointer;">Show all <span>52</span> comments</span>
-                    </div>
-                    </div>  
-                </div>
-            </div>
-        <div class="row mt-4 justify-content-center">
-            <div class="col-12 col-md-8 col-lg-6">
-                <div class="card mb-3 shadow border-0 rounded">
-                    <div class="card-header d-flex justify-content-between align-items-center">
-                        <div class="d-flex align-items-center">
-                            <img src="assets/images/ellipse_4.png" alt="User Profile Picture" class="rounded-circle" width="70px" style="margin-right: 20px;">
-                            <div class="info">
-                                <h4 class="mb-0 name">Esther Howard</h4>
-                                <h5 class="text-muted mb-0">Instructor,<span>Msc</span></h5>
-                                <h5 class="text-muted">3 min ago</h5>
-                            </div>
-                        </div>
-                        <i class="fas fa-ellipsis-v text-muted"></i>
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-text">Sometimes it's a hot take, and sometimes it's just a text for a post. Since it’s a social app, sometimes it's a stuff take.</h4>
-                    </div>
-                    <div class="card-footer d-flex justify-content-between align-items-center">
-                        <div class="d-flex align-items-center like-comment">
-                            <span class="d-flex align-items-center" style="font-size: 20px;"><i class="material-icons" >favorite</i><span>34</span><span class="text">likes</span></span>
-                            <span class="d-flex align-items-center" style="font-size: 20px;"><i class="material-icons" >comment</i><span>54</span><span class="text">comments</span></span>
-                            <span class="d-flex align-items-center" style="font-size: 20px;"><i class="material-icons" >bookmarks</i><span class="text">Save</span></span>
-                        </div>
-                        </div>
-                        <div class="comment-section mt-3">
-                            <input type="text" class="form-control" placeholder="Add a comment...">
-                            <button class="btn btn-primary">Post</button>
-                        </div>
-                        <div class="comments">
-                            <div class="comment">
-                                <img src="assets/images/ellipse_4.png" alt="" width="50px" style="border-radius: 50%;">
-                                <span class="user">John Doe:</span>
-                                <span class="text">Great post!</span>
-                            </div>
-                            <div class="comment">
-                                <img src="assets/images/ellipse_41.png" alt="" width="50px" style="border-radius: 50%;">
-                                <span class="user">Jane Smith:</span>
-                                <span class="text">Thanks for sharing.</span>
-                            </div>
-                            <div class="comment">
-                                <img src="assets/images/ellipse_5.png" alt="" width="50px"  style="border-radius: 50%;">
-                                <span class="user">Alex Johnson:</span>
-                                <span class="text">Really insightful!</span>
-                            </div>
-                            <span class="show" style="margin-left: 30px; cursor: pointer;">Show all <span>52</span> comments</span>
-                    </div>
-                    </div>  
-                </div>
-            </div>
-        </div>
-    </main>
-    <div class="right">
-        <div class="pro">
-            <div class="pro-img"><img src="assets/images/48fb0979b0fbdd8e320622de39475b562ddad56d copy.png" alt="Helen Life"></div>
-            <span class="pro-name">Helen Life</span>
-            <span class="pro-status">Online</span>
-            <span class="pro-role">Instructor(Msc)</span>
-        </div>
-        <div class="notif">
-            <i class="material-icons notif-icon">notifications</i>
-            <div class="notif-num">5</div>
-        </div>
-        <div class="suggested-people">
-            <h3>Suggested people</h3>
-            <div class="person">
-                <img src="assets/images/ellipse_4.png" alt="Helena Hills">
-                <div class="person-info">
-                    <span>Helena Hills</span>
-                    <a href="https://twitter.com/helenahills">@helenahills</a>
-                </div>
-            </div>
-            <div class="person">
-                <img src="assets/images/ellipse_41.png" alt="Charles Tran">
-                <div class="person-info">
-                    <span>Charles Tran</span>
-                    <a href="https://twitter.com/charlestran">@charlestran</a>
-                </div>
-            </div>
-            <div class="person">
-                <img src="assets/images/ellipse_5.png" alt="Oscar Davis">
-                <div class="person-info">
-                    <span>Oscar Davis</span>
-                    <a href="https://twitter.com/oscardavis">@oscardavis</a>
-                </div>
-            </div>
-            <div class="person">
-                <img src="assets/images/ellipse_81.png" alt="Daniel Jay Park">
-                <div class="person-info">
-                    <span>Daniel Jay Park</span>
-                    <a href="https://twitter.com/danielj">@danielj</a>
-                </div>
-            </div>
-            <div class="person">
-                <img src="assets/images/ellipse_8.png" alt="Carlo Rojas">
-                <div class="person-info">
-                    <span>Carlo Rojas</span>
-                    <a href="https://twitter.com/carjorojas">@carjorojas</a>
-                </div>
-            </div>
-        </div>    
-    </div>
-    <script>
-        document.getElementById('addIcon').addEventListener('click', function() {
-            const addOptions = document.getElementById('addOptions');
-            if (addOptions.style.display === 'block') {
-                addOptions.style.display = 'none';
-            } else {
-                addOptions.style.display = 'block';
-            }
-        });
-      
-        // Hide the options div when clicking outside of it
-        document.addEventListener('click', function(event) {
-            const addOptions = document.getElementById('addOptions');
-            const addIcon = document.getElementById('addIcon');
-            if (!addOptions.contains(event.target) && !addIcon.contains(event.target)) {
-                addOptions.style.display = 'none';
-            }
-        });
-      
-        document.getElementById('createPost').addEventListener('click', function() {
-            alert('Create a Post clicked');
-            // Implement further logic for creating a post
-        });
-      
-        document.getElementById('createEvent').addEventListener('click', function() {
-            alert('Create an Event clicked');
-            // Implement further logic for creating an event
-        });
-      
-        document.getElementById('createVideo').addEventListener('click', function() {
-            alert('Create a Video clicked');
-            // Implement further logic for creating a video
-        });
-      </script>
-      
-    <script>
-  document.getElementById('search-icon').addEventListener('click', function() {
-    document.getElementById('search-results').style.display = 'block';
-  });
 
-  document.getElementById('close-search').addEventListener('click', function() {
-    document.getElementById('search-results').style.display = 'none';
-  });
-  const prevArrow = document.getElementById('prev-arrow');
-    const nextArrow = document.getElementById('next-arrow');
-    const recentImagesContainer = document.querySelector('.recent-container');
+      <div class="card rail-card">
+        <h3>Upcoming events</h3>
+        <div class="ev-row">
+          <span class="ev-date"><b>08</b><em>Oct</em></span>
+          <div>
+            <b style="font-size:var(--fs-sm);color:var(--ink);display:block;">Addis Tech Meetup</b>
+            <span class="pmeta">5 Kilo campus · Sat 2:00 PM</span>
+          </div>
+        </div>
+        <div class="ev-row">
+          <span class="ev-date" style="background:var(--teal-soft);"><b style="color:var(--teal);">10</b><em style="color:#2e8f7c;">Oct</em></span>
+          <div>
+            <b style="font-size:var(--fs-sm);color:var(--ink);display:block;">Derby night @ Addis Stadium</b>
+            <span class="pmeta">Fan group meets 4:30 PM</span>
+          </div>
+        </div>
+        <div class="ev-row">
+          <span class="ev-date" style="background:var(--honey-soft);"><b style="color:#9a6a10;">15</b><em style="color:#b08b47;">Oct</em></span>
+          <div>
+            <b style="font-size:var(--fs-sm);color:var(--ink);display:block;">Buna &amp; beats · Tomoca rooftop</b>
+            <span class="pmeta">Acoustic set + coffee tasting</span>
+          </div>
+        </div>
+        <div class="rail-card__foot">Prototype event data — <a href="calander.html">open calendar</a></div>
+      </div>
 
-    prevArrow.addEventListener('click', () => {
-        recentImagesContainer.scrollLeft -= 100; 
-    });
+      <div class="card rail-card">
+        <h3>Suggested people</h3>
+        <div class="person-row">
+          <a class="avatar av-teal" href="others_profile.html"><img src="assets/images/ellipse_41.png" alt=""></a>
+          <div><span class="pname">Dawit Kassa</span><span class="pmeta">Photography · Piassa</span></div>
+          <button class="btn btn--soft btn--pill-sm" type="button" style="margin-left:auto;">Follow</button>
+        </div>
+        <div class="person-row">
+          <a class="avatar av-honey" href="others_profile.html"><img src="assets/images/ellipse_5.png" alt=""></a>
+          <div><span class="pname">Betelhem A.</span><span class="pmeta">Pastry chef · Bole</span></div>
+          <button class="btn btn--soft btn--pill-sm" type="button" style="margin-left:auto;">Follow</button>
+        </div>
+        <div class="person-row">
+          <a class="avatar av-navy" href="others_profile.html"><img src="assets/images/ellipse_81.png" alt=""></a>
+          <div><span class="pname">Nahom Tesfaye</span><span class="pmeta">CS student · 4 Kilo</span></div>
+          <button class="btn btn--soft btn--pill-sm" type="button" style="margin-left:auto;">Follow</button>
+        </div>
+        <div class="person-row">
+          <a class="avatar av-plum" href="others_profile.html"><img src="assets/images/graphic_1.jpeg" alt=""></a>
+          <div><span class="pname">Dani Abebe</span><span class="pmeta">Sound engineer</span></div>
+          <button class="btn btn--soft btn--pill-sm" type="button" style="margin-left:auto;">Follow</button>
+        </div>
+      </div>
 
-    nextArrow.addEventListener('click', () => {
-        recentImagesContainer.scrollLeft += 100; 
-    });
-      </script>
-<script>
-    /* Add this JavaScript code to toggle the sidebar */
-const menuIcon = document.querySelector('.menu');
-const sidebar = document.querySelector('aside');
+      <div class="card rail-card">
+        <h3>Trending in Addis</h3>
+        <div class="tr-list">
+          <div class="tr-item"><b>#AddisTechMeetup</b><span>2,418 posts this week</span></div>
+          <div class="tr-item"><b>#BunaSession</b><span>1,930 posts this week</span></div>
+          <div class="tr-item"><b>#AddisDerby</b><span>1,204 posts this week</span></div>
+          <div class="tr-item"><b>#MadeInAddis</b><span>812 posts this week</span></div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</main>
 
-menuIcon.addEventListener('click', () => {
-  sidebar.classList.toggle('active');
-});
-</script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<footer class="site-foot">
+  <nav>
+    <a href="index.html">About Mahber</a>
+    <a href="your_profile.html">Your profile</a>
+    <a href="video_player.html">Video player</a>
+    <a href="sign_in.html">Sign in</a>
+  </nav>
+  <p><span class="proto-tag">Prototype — static demo · sample profile, no live data</span></p>
+</footer>
+
+<nav class="tabbar" aria-label="Quick navigation">
+  <a class="is-active" href="home.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+    Home
+  </a>
+  <a href="message.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/></svg>
+    Chats
+  </a>
+  <a href="video.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="m16 10 6-3v10l-6-3"/></svg>
+    Videos
+  </a>
+  <a href="calander.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+    Events
+  </a>
+  <a href="your_profile.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/></svg>
+    Profile
+  </a>
+</nav>
+
 </body>
 </html>

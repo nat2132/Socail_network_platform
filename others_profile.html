@@ -1,127 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/> 
-    <link rel="stylesheet" href="others_profile.css">
-    <title>Video</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samuel Bekele · Mahber</title>
+  <link rel="stylesheet" href="css/design-system.css">
 </head>
 <body>
-    <aside class="sidebar">
-        <nav class="nav flex-column">
-            <a class="nav-link" href="#">
-                <div class="s-image-d navbar-brand"></div>
-              </a>
-          <a class="nav-link" href="home.html">
-            <i class="material-icons size nav-icon">home</i>
-            <span class="size-text">Home</span>
-          </a>
-          <a class="nav-link" href="calander.html">
-            <i class="material-icons size nav-icon">calendar_month</i>
-            <span class="size-text">Calendar</span>
-          </a>
-          <a class="nav-link" href="message.html">
-            <i class="material-icons size nav-icon">chat</i>
-            <span class="size-text">Messages</span>
-          </a>
-          <a class="nav-link" href="video.html">
-            <i class="material-icons size nav-icon">subscriptions</i>
-            <span class="size-text">Videos</span>
-          </a>
-          <a class="nav-link" href="saved.html">
-            <i class="material-icons size nav-icon">bookmark</i>
-            <span class="size-text">Saved</span>
-          </a>
-          <a class="nav-link" href="#">
-            <i class="material-icons size nav-icon">search</i>
-            <span class="size-text" id="search-icon">Search</span>
-          </a>
-          <a class="nav-link active" href="your_profile.html">
-            <i class="material-icons size nav-icon">account_circle</i>
-            <span class="">Account Settings</span>
-          </a>
-          <a class="nav-link" href="#">
-            <i class="material-icons size nav-icon">logout</i>
-            <span class="size-text">Logout</span>
-          </a>
-        </nav>
-      </aside>
-    <main class="main-container">
-        <div class="container">
-            <h1 class="head">Profile</h1>
-            <div class="text-center mb-4">
-              <img src="assets/images/ellipse_41.png" alt="Profile Image" class="profile-image">
-            </div>
-              <div class="inputs">
-                <form action=" " method="post">  
-                    <label for="Fullname">
-                      <p style="width: 430px; font-size: 25px; margin: 10px;">Fullname</p>
-                        <i class="material-icons">person</i>
-                    </label> 
-                    <label for="Username">
-                      <p style="width: 430px; font-size: 25px; margin: 10px;">Username</p>
-                        <i class="material-icons">account_circle</i>
-                    </label> 
-                    <label for="Email">
-                      <p style="width: 430px; font-size: 25px; margin: 10px;">Email</p>
-                        <i class="material-icons">mail</i>
-                    </label>
-                    <label for="Role">
-                      <p style="width: 430px; font-size: 25px; margin: 10px;">Role</p>
-                        <i class="material-icons">person_pin</i>
-                    </label>
-                    <label for="password">
-                      <p style="width: 430px; font-size: 25px; margin: 10px;">Password</p>
-                        <i class="material-icons">lock</i>
-                    </label>
-                    <label for="Bio">
-                        <p style="width: 430px; font-size: 25px; margin: 10px;">Bio</p>
-                        <i class="material-icons">star</i>
-                    </label>
-                </form>
-            </div>
-              </div>
-              <ul class="nav nav-tabs mt-5" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link text-center" id="posts-tab" data-bs-toggle="tab" data-bs-target="#posts" type="button" role="tab" aria-controls="posts" aria-selected="true" style="font-size: 23px; background-color: rgba(0, 60, 255, 0.632);">Posts</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="videos-tab" data-bs-toggle="tab" data-bs-target="#videos" type="button" role="tab" aria-controls="videos" aria-selected="false">Videos</button>
-                </li>
-            </ul>
-                    <div class="container mt-5">
-                        <div class="image-container">
-                            <img src="assets/images/small_post.jpeg" alt="Image 1">
-                            <img src="assets/images/small_post_1.jpeg" alt="Image 2">
-                            <img src="assets/images/small_post_2.jpeg" alt="Image 3">
-                            <img src="assets/images/small_post_3.jpeg" alt="Image 1">
-                            <img src="assets/images/small_post_4.jpeg" alt="Image 2">
-                            <img src="assets/images/small_post_5.jpeg" alt="Image 3">
-                            <img src="assets/images/small_post_6.jpeg" alt="Image 1">
-                            <img src="assets/images/small_post_7.jpeg" alt="Image 2">
-                            <img src="assets/images/small_post_8.jpeg" alt="Image 3">
-                        </div>
-                    <p>No videos available.</p>
-            </div>
-    </main>
-    <div class="right">
-        <div class="pro">
-            <div class="pro-img"><img src="assets/images/48fb0979b0fbdd8e320622de39475b562ddad56d copy.png" alt="Helen Life"></div>
-            <span class="pro-name">Helen Life</span>
-            <span class="pro-status">Online</span>
-            <span class="pro-role">Instructor</span>
-        </div>
-        <div class="notif">
-            <i class="material-icons notif-icon">notifications</i>
-            <div class="notif-num">5</div>
-        </div>
+
+<header class="topbar">
+  <div class="topbar__inner">
+    <a class="brand" href="home.html"><span class="brand__mark">M</span><span class="brand__name">Mahber</span></a>
+    <div class="topbar__search">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input type="search" placeholder="Search people, events, topics…" aria-label="Search Mahber">
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <nav class="topbar__links" aria-label="Primary">
+      <a href="home.html">Home</a>
+      <a href="message.html">Messages</a>
+      <a href="video.html">Videos</a>
+      <a href="calander.html">Calendar</a>
+      <a href="saved.html">Saved</a>
+    </nav>
+    <div class="topbar__actions">
+      <a class="avatar avatar--s" href="your_profile.html" title="Hanna Girma">
+        <img src="assets/images/48fb0979b0fbdd8e320622de39475b562ddad56d copy.png" alt="Hanna Girma">
+      </a>
+      <input type="checkbox" id="navtoggle" class="hackcheck">
+      <label class="burger" for="navtoggle" aria-label="Menu"><span></span><span></span><span></span></label>
+      <nav class="mobilenav" aria-label="Menu">
+        <a href="home.html">Home</a>
+        <a href="message.html">Messages</a>
+        <a href="video.html">Videos</a>
+        <a href="calander.html">Calendar</a>
+        <a href="saved.html">Saved</a>
+        <a href="your_profile.html">Your profile</a>
+        <a class="is-active" href="others_profile.html">Samuel Bekele</a>
+        <a href="video_player.html">Watch: Java in 90 seconds</a>
+        <a href="index.html">About Mahber · Sign out (demo)</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="container" style="padding-top:26px;">
+
+  <section class="card card--flush">
+    <div class="profile-cover profile-cover--alt" role="img" aria-label="Decorative cover art"></div>
+    <div class="profile-avatar-wrap">
+      <span class="avatar avatar--xl av-teal" style="box-shadow:var(--shadow-md);">
+        <img src="assets/images/ellipse_4.png" alt="Samuel Bekele">
+      </span>
+      <div style="padding-bottom:10px;">
+        <h1 style="font-size:var(--fs-xl);">Samuel Bekele</h1>
+        <p style="color:var(--muted);font-size:var(--fs-sm);">@sammybekele · Organizer, Addis Tech Meetup</p>
+      </div>
+      <div style="margin-left:auto;padding-bottom:10px;display:flex;gap:10px;flex-wrap:wrap;">
+        <button class="btn btn--primary" type="button">Follow</button>
+        <a class="btn btn--ghost" href="message.html">Message</a>
+      </div>
+    </div>
+    <div class="profile-name-row">
+      <p style="max-width:56ch;color:var(--muted);font-size:var(--fs-sm);">
+        Backend engineer at a fintech in Addis · runs the monthly <a href="calander.html">Addis Tech Meetup</a> out of the
+        5&nbsp;Kilo campus · mentors first-year students on Saturdays · convinced injera is a data structure.
+      </p>
+    </div>
+    <div class="profile-stats">
+      <div><b>94</b><span>Posts</span></div>
+      <div><b>12</b><span>Videos</span></div>
+      <div><b>1.4K</b><span>Following</span></div>
+      <div><b>3.2K</b><span>Followers</span></div>
+    </div>
+  </section>
+
+  <nav class="tabs" aria-label="Profile sections">
+    <a class="is-active" href="others_profile.html">Posts</a>
+    <a href="#videos">Videos</a>
+    <a href="#friends">Friends</a>
+    <a href="#about">About</a>
+  </nav>
+
+  <section id="videos" style="margin-top:18px;">
+    <div class="section-head">
+      <h2>Recent uploads</h2>
+      <span class="hint">3 of 12 shown in this prototype</span>
+    </div>
+    <div class="video-grid">
+      <a class="card video-card" href="video_player.html">
+        <span class="video-thumb"><img src="assets/images/maxresdefault.jpg" alt="Java in 100 Seconds — talk replay"><span class="duration">16:35</span></span>
+        <span class="video-meta">
+          <span class="avatar avatar--s av-teal"><img src="assets/images/ellipse_4.png" alt=""></span>
+          <span style="min-width:0;">
+            <b style="font-size:var(--fs-md);color:var(--ink);">Java in 100 Seconds — meetup replay</b>
+            <small class="vm">4.1K views · 2 weeks ago</small>
+          </span>
+        </span>
+      </a>
+      <a class="card video-card" href="video_player.html">
+        <span class="video-thumb"><img src="assets/images/maxresdefault (1).jpg" alt="Building your first homepage — workshop replay"><span class="duration">21:04</span></span>
+        <span class="video-meta">
+          <span class="avatar avatar--s av-teal"><img src="assets/images/ellipse_4.png" alt=""></span>
+          <span style="min-width:0;">
+            <b style="font-size:var(--fs-md);color:var(--ink);">Build your first homepage — workshop replay</b>
+            <small class="vm">1.6K views · 2 months ago</small>
+          </span>
+        </span>
+      </a>
+      <a class="card video-card" href="video_player.html">
+        <span class="video-thumb"><img src="assets/images/maxresdefault (2).jpg" alt="Shipping without writing code — panel"><span class="duration">33:12</span></span>
+        <span class="video-meta">
+          <span class="avatar avatar--s av-teal"><img src="assets/images/ellipse_4.png" alt=""></span>
+          <span style="min-width:0;">
+            <b style="font-size:var(--fs-md);color:var(--ink);">Shipping without writing code — alumni panel</b>
+            <small class="vm">980 views · 5 months ago</small>
+          </span>
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <section id="friends" style="margin-top:8px;">
+    <div class="section-head"><h2>Friends <span class="hint" style="display:inline;">(482)</span></h2></div>
+    <div class="friends-grid">
+      <div class="card friend-card">
+        <span class="avatar avatar--m av-corail" style="width:64px;height:64px;"><img src="assets/images/48fb0979b0fbdd8e320622de39475b562ddad56d copy.png" alt=""></span>
+        <b style="font-size:var(--fs-sm);display:block;">Hanna Girma</b>
+        <span class="hint">You · 12 mutual friends</span>
+      </div>
+      <div class="card friend-card">
+        <span class="avatar avatar--m av-honey" style="width:64px;height:64px;"><img src="assets/images/graphic.jpeg" alt=""></span>
+        <b style="font-size:var(--fs-sm);display:block;">Liya Haile</b>
+        <span class="hint">Creators club</span>
+      </div>
+      <div class="card friend-card">
+        <span class="avatar avatar--m av-slate" style="width:64px;height:64px;"><img src="assets/images/ellipse_8.png" alt=""></span>
+        <b style="font-size:var(--fs-sm);display:block;">Mikias Alemu</b>
+        <span class="hint">Derby watch group</span>
+      </div>
+      <div class="card friend-card">
+        <span class="avatar avatar--m av-navy" style="width:64px;height:64px;"><img src="assets/images/ellipse_41.png" alt=""></span>
+        <b style="font-size:var(--fs-sm);display:block;">Dawit Kassa</b>
+        <span class="hint">Photographer</span>
+      </div>
+      <div class="card friend-card">
+        <span class="avatar avatar--m av-plum" style="width:64px;height:64px;"><img src="assets/images/graphic_2.jpeg" alt=""></span>
+        <b style="font-size:var(--fs-sm);display:block;">Hanna T.</b>
+        <span class="hint">Volunteers network</span>
+      </div>
+      <div class="card friend-card">
+        <span class="avatar avatar--m av-teal" style="width:64px;height:64px;"><img src="assets/images/ellipse_5.png" alt=""></span>
+        <b style="font-size:var(--fs-sm);display:block;">Betelhem A.</b>
+        <span class="hint">Pastry chef · Bole</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" style="margin-top:8px;">
+    <div class="section-head"><h2>About</h2></div>
+    <div class="card">
+      <div class="card__body" style="display:grid;gap:10px;font-size:var(--fs-sm);">
+        <p><b style="color:var(--ink);">Works at</b> — payment systems team, finose (Addis)</p>
+        <p><b style="color:var(--ink);">Studied at</b> — Addis Ababa University, computer science</p>
+        <p><b style="color:var(--ink);">Organizes</b> — Addis Tech Meetup, second Saturday monthly</p>
+        <p><b style="color:var(--ink);">Joined</b> — March 2025 · <span class="hint" style="display:inline;">sample profile details for the prototype</span></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <nav>
+    <a href="index.html">About Mahber</a>
+    <a href="your_profile.html">Your profile</a>
+    <a href="video_player.html">Video player</a>
+    <a href="sign_in.html">Sign in</a>
+  </nav>
+  <p><span class="proto-tag">Prototype — static demo · sample profile, no live data</span></p>
+</footer>
+
+<nav class="tabbar" aria-label="Quick navigation">
+  <a href="home.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+    Home
+  </a>
+  <a href="message.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/></svg>
+    Chats
+  </a>
+  <a href="video.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="m16 10 6-3v10l-6-3"/></svg>
+    Videos
+  </a>
+  <a href="calander.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+    Events
+  </a>
+  <a class="is-active" href="your_profile.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/></svg>
+    Profile
+  </a>
+</nav>
+
 </body>
 </html>
