@@ -333,7 +333,7 @@ h3 { font-size: var(--fs-lg); font-weight: 700; }
 .post-media { margin-top: 12px; }
 .post-media img { width: 100%; max-height: 430px; object-fit: cover; }
 .post-foot {
-  display: flex; align-items: center; gap: 4px;
+  display: flex; align-items: center; gap: 4px; flex-wrap: wrap;
   padding: 8px 12px; margin: 10px 18px 14px;
   border-top: 1px solid var(--border);
 }
@@ -402,7 +402,7 @@ h3 { font-size: var(--fs-lg); font-weight: 700; }
 @media (min-width: 760px) {
   .profile-name-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; }
 }
-.profile-stats { display: flex; gap: 26px; padding: 12px 26px; font-size: var(--fs-sm); }
+.profile-stats { display: flex; gap: 26px; padding: 12px 26px; font-size: var(--fs-sm); flex-wrap: wrap; }
 .profile-stats b { display: block; font-size: var(--fs-lg); color: var(--ink); }
 .profile-stats span { color: var(--muted); font-weight: 600; }
 
